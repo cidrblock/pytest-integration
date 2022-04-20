@@ -1,0 +1,15 @@
+all:
+  children:
+    nxos:
+      hosts:
+        nxos_sandbox:
+          ansible_become: false
+          ansible_host: sandbox-nxos-1.cisco.com
+          ansible_user: admin
+          ansible_password: Admin_1234!
+          ansible_connection: ansible.netcommon.network_cli
+          ansible_network_cli_ssh_type: libssh
+          ansible_python_interpreter: python
+          ansible_network_import_modules: True
+      vars:
+        ansible_network_os: cisco.nxos.nxos
