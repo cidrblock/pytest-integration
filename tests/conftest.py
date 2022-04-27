@@ -279,14 +279,31 @@ def network_test_vars(monkeypatch, request):
     ).resolve()
     test_mode = os.environ.get("ANSIBLE_NETWORK_TEST_MODE", "playback").lower()
 
-    # if test_mode == "playback":
-    #     original_start_connection = task_executor.start_connection
-    #     def start_connection(*args, **kwargs):
-    #         if has_run:
+    original = task_executor.start_connection
 
-    #     return "/dev/null"
+    def start_connection(play_context, variables, task_uuid):
+        """
+        Starts the persistent connection
+        """
+        ssh = connection_loader.get("ssh", class_only=True)
+        ansible_playbook_pid = os.getppid()
+        cp = ssh._create_control_path(
+            play_context.remote_addr,
+            play_context.port,
+            play_context.remote_user,
+            play_context.connection,
+            ansible_playbook_pid,
+        )
+        tmp_path = C.PERSISTENT_CONTROL_PATH_DIR
+        socket_path = cp % dict(directory=tmp_path)
+        if os.path.exists(socket_path):
+            return socket_path
+        return original(play_context, variables, task_uuid)
 
-    # monkeypatch.setattr(task_executor, "start_connection", start_connection)
+    if test_mode == "playback":
+        monkeypatch.setattr(
+            task_executor, "start_connection", start_connection
+        )
 
     vars = {
         "ansible_network_test_parameters": {

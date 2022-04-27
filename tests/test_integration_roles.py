@@ -1,6 +1,11 @@
+import inspect
+
 from pathlib import Path
+from unittest.mock import patch
 
 import pytest
+
+from ansible.executor import task_executor
 
 from .defs import AnsibleAction
 from .defs import AnsiblePlay
@@ -13,8 +18,9 @@ def find_roles():
     return roles
 
 
+@patch("ansible.executor.task_executor.any")
 @pytest.mark.parametrize("role", find_roles(), ids=lambda x: x.name)
-def test_role(role, network_test_vars, playbook_runner):
+def test_role(mock_any, role, network_test_vars, playbook_runner):
     task = AnsibleTask(
         action=AnsibleAction(
             module="include_role",

@@ -18,7 +18,7 @@ skip_glob = [
 max-line-length = 100
 
 [tool.pytest.ini_options]
-addopts = "-s"
+addopts = "-s --profile-svg"
 testpaths = ["tests"]
 filterwarnings = [
     'ignore:AnsibleCollectionFinder has already been configured',
