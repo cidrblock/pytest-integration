@@ -1,1 +1,5 @@
-{"command": "deny eigrp 192.0.2.0 0.0.255.255 any", "response": ""}
+{
+    "command": "deny eigrp 192.0.2.0 0.0.255.255 any",
+    "response": [],
+    "response_type": "text"
+}

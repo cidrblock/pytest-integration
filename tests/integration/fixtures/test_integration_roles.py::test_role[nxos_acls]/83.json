@@ -1,1 +1,5 @@
-{"command": "10 deny udp host 2001:db8:3431::12 lt 35 any", "response": ""}
+{
+    "command": "10 deny udp host 2001:db8:3431::12 lt 35 any",
+    "response": [],
+    "response_type": "text"
+}

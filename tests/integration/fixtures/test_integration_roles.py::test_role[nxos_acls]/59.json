@@ -1,1 +1,9 @@
-{"command": "show running-config | section 'ip(v6)* access-list'", "response": "ip access-list NewACL\n  10 deny eigrp 192.0.2.0 0.0.255.255 any \n  20 remark Example for overridden state"}
+{
+    "command": "show running-config | section 'ip(v6)* access-list'",
+    "response": [
+        "ip access-list NewACL",
+        "  10 deny eigrp 192.0.2.0 0.0.255.255 any ",
+        "  20 remark Example for overridden state"
+    ],
+    "response_type": "text"
+}

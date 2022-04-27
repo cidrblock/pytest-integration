@@ -1,1 +1,10 @@
-{"command": "show running-config | section 'ip(v6)* access-list'", "response": "ipv6 access-list ACL1v6\n  30 permit pim any any \n  40 remark Replaced ACE\nipv6 access-list ACL2v6"}
+{
+    "command": "show running-config | section 'ip(v6)* access-list'",
+    "response": [
+        "ipv6 access-list ACL1v6",
+        "  30 permit pim any any ",
+        "  40 remark Replaced ACE",
+        "ipv6 access-list ACL2v6"
+    ],
+    "response_type": "text"
+}

@@ -1,1 +1,5 @@
-{"command": "20 permit ip any any fragments log", "response": ""}
+{
+    "command": "20 permit ip any any fragments log",
+    "response": [],
+    "response_type": "text"
+}

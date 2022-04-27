@@ -1,1 +1,5 @@
-{"command": "20 deny udp any any", "response": ""}
+{
+    "command": "20 deny udp any any",
+    "response": [],
+    "response_type": "text"
+}

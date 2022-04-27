@@ -1,1 +1,9 @@
-{"command": "show running-config | section 'ip(v6)* access-list'", "response": "ip access-list ACL1v4\n  20 permit ip any any fragments log \n  50 deny tcp any lt smtp 192.0.2.64 0.0.0.255 ack fin"}
+{
+    "command": "show running-config | section 'ip(v6)* access-list'",
+    "response": [
+        "ip access-list ACL1v4",
+        "  20 permit ip any any fragments log ",
+        "  50 deny tcp any lt smtp 192.0.2.64 0.0.0.255 ack fin"
+    ],
+    "response_type": "text"
+}

@@ -1,1 +1,11 @@
-{"command": "show run all | inc nxapi", "response": "feature nxapi\nnxapi http port 80\nno nxapi https\nnxapi ssl ciphers weak\nnxapi ssl protocols TLSv1"}
+{
+    "command": "show run all | inc nxapi",
+    "response": [
+        "feature nxapi",
+        "nxapi http port 80",
+        "no nxapi https",
+        "nxapi ssl ciphers weak",
+        "nxapi ssl protocols TLSv1"
+    ],
+    "response_type": "text"
+}

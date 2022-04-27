@@ -263,6 +263,7 @@ EXEMPTED = [
     "^Kernel uptime is.*$",  # nxos show version uptime
     "^!Running configuration last done.*",  # nxos show running-config last
     "^!Time:",  # nxos show version time
+    r'\s+"kern_uptm_.*',  # nxos show version json
 ]
 
 

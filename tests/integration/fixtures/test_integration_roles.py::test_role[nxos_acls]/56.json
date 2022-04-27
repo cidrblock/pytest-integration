@@ -1,1 +1,5 @@
-{"command": "remark Example for overridden state", "response": ""}
+{
+    "command": "remark Example for overridden state",
+    "response": [],
+    "response_type": "text"
+}

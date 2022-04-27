@@ -1,1 +1,5 @@
-{"command": "10 deny ipv6 any host 2001:db8:3000::36", "response": ""}
+{
+    "command": "10 deny ipv6 any host 2001:db8:3000::36",
+    "response": [],
+    "response_type": "text"
+}

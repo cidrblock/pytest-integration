@@ -1,1 +1,5 @@
-{"command": "no 20 permit tcp host 2001:db8:2000:2::2 host 2001:db8:2000:ab::2", "response": ""}
+{
+    "command": "no 20 permit tcp host 2001:db8:2000:2::2 host 2001:db8:2000:ab::2",
+    "response": [],
+    "response_type": "text"
+}

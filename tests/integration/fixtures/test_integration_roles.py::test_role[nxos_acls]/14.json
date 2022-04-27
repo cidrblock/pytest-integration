@@ -1,1 +1,5 @@
-{"command": "ip access-list ACL2v4", "response": ""}
+{
+    "command": "ip access-list ACL2v4",
+    "response": [],
+    "response_type": "text"
+}

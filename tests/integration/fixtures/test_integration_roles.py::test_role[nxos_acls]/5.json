@@ -1,1 +1,1297 @@
-{"command": "show interface brief | json", "response": "{\"TABLE_interface\": {\"ROW_interface\": [{\"interface\": \"mgmt0\", \"state\": \"up\", \"ip_addr\": \"192.168.101.14\", \"speed\": \"1000\", \"mtu\": \"1500\"}, {\"interface\": \"Ethernet1/1\", \"vlan\": \"--\", \"type\": \"eth\", \"portmode\": \"routed\", \"state\": \"down\", \"state_rsn_desc\": \"Administratively down\", \"speed\": \"auto\", \"ratemode\": \"D\"}, {\"interface\": \"Ethernet1/2\", \"vlan\": \"--\", \"type\": \"eth\", \"portmode\": \"routed\", \"state\": \"down\", \"state_rsn_desc\": \"Administratively down\", \"speed\": \"auto\", \"ratemode\": \"D\"}, {\"interface\": \"Ethernet1/3\", \"vlan\": \"--\", \"type\": \"eth\", \"portmode\": \"routed\", \"state\": \"down\", \"state_rsn_desc\": \"Administratively down\", \"speed\": \"auto\", \"ratemode\": \"D\"}, {\"interface\": \"Ethernet1/4\", \"vlan\": \"--\", \"type\": \"eth\", \"portmode\": \"routed\", \"state\": \"down\", \"state_rsn_desc\": \"Administratively down\", \"speed\": \"auto\", \"ratemode\": \"D\"}, {\"interface\": \"Ethernet1/5\", \"vlan\": \"--\", \"type\": \"eth\", \"portmode\": \"routed\", \"state\": \"down\", \"state_rsn_desc\": \"Administratively down\", \"speed\": \"auto\", \"ratemode\": \"D\"}, {\"interface\": \"Ethernet1/6\", \"vlan\": \"--\", \"type\": \"eth\", \"portmode\": \"routed\", \"state\": \"down\", \"state_rsn_desc\": \"Administratively down\", \"speed\": \"auto\", \"ratemode\": \"D\"}, {\"interface\": \"Ethernet1/7\", \"vlan\": \"--\", \"type\": \"eth\", \"portmode\": \"routed\", \"state\": \"down\", \"state_rsn_desc\": \"Administratively down\", \"speed\": \"auto\", \"ratemode\": \"D\"}, {\"interface\": \"Ethernet1/8\", \"vlan\": \"--\", \"type\": \"eth\", \"portmode\": \"routed\", \"state\": \"down\", \"state_rsn_desc\": \"Administratively down\", \"speed\": \"auto\", \"ratemode\": \"D\"}, {\"interface\": \"Ethernet1/9\", \"vlan\": \"--\", \"type\": \"eth\", \"portmode\": \"routed\", \"state\": \"down\", \"state_rsn_desc\": \"Administratively down\", \"speed\": \"auto\", \"ratemode\": \"D\"}, {\"interface\": \"Ethernet1/10\", \"vlan\": \"--\", \"type\": \"eth\", \"portmode\": \"routed\", \"state\": \"down\", \"state_rsn_desc\": \"Administratively down\", \"speed\": \"auto\", \"ratemode\": \"D\"}, {\"interface\": \"Ethernet1/11\", \"vlan\": \"--\", \"type\": \"eth\", \"portmode\": \"routed\", \"state\": \"down\", \"state_rsn_desc\": \"Administratively down\", \"speed\": \"auto\", \"ratemode\": \"D\"}, {\"interface\": \"Ethernet1/12\", \"vlan\": \"--\", \"type\": \"eth\", \"portmode\": \"routed\", \"state\": \"down\", \"state_rsn_desc\": \"Administratively down\", \"speed\": \"auto\", \"ratemode\": \"D\"}, {\"interface\": \"Ethernet1/13\", \"vlan\": \"--\", \"type\": \"eth\", \"portmode\": \"routed\", \"state\": \"down\", \"state_rsn_desc\": \"Administratively down\", \"speed\": \"auto\", \"ratemode\": \"D\"}, {\"interface\": \"Ethernet1/14\", \"vlan\": \"--\", \"type\": \"eth\", \"portmode\": \"routed\", \"state\": \"down\", \"state_rsn_desc\": \"Administratively down\", \"speed\": \"auto\", \"ratemode\": \"D\"}, {\"interface\": \"Ethernet1/15\", \"vlan\": \"--\", \"type\": \"eth\", \"portmode\": \"routed\", \"state\": \"down\", \"state_rsn_desc\": \"Administratively down\", \"speed\": \"auto\", \"ratemode\": \"D\"}, {\"interface\": \"Ethernet1/16\", \"vlan\": \"--\", \"type\": \"eth\", \"portmode\": \"routed\", \"state\": \"down\", \"state_rsn_desc\": \"Administratively down\", \"speed\": \"auto\", \"ratemode\": \"D\"}, {\"interface\": \"Ethernet1/17\", \"vlan\": \"--\", \"type\": \"eth\", \"portmode\": \"routed\", \"state\": \"down\", \"state_rsn_desc\": \"Administratively down\", \"speed\": \"auto\", \"ratemode\": \"D\"}, {\"interface\": \"Ethernet1/18\", \"vlan\": \"--\", \"type\": \"eth\", \"portmode\": \"routed\", \"state\": \"down\", \"state_rsn_desc\": \"Administratively down\", \"speed\": \"auto\", \"ratemode\": \"D\"}, {\"interface\": \"Ethernet1/19\", \"vlan\": \"--\", \"type\": \"eth\", \"portmode\": \"routed\", \"state\": \"down\", \"state_rsn_desc\": \"Administratively down\", \"speed\": \"auto\", \"ratemode\": \"D\"}, {\"interface\": \"Ethernet1/20\", \"vlan\": \"--\", \"type\": \"eth\", \"portmode\": \"routed\", \"state\": \"down\", \"state_rsn_desc\": \"Administratively down\", \"speed\": \"auto\", \"ratemode\": \"D\"}, {\"interface\": \"Ethernet1/21\", \"vlan\": \"--\", \"type\": \"eth\", \"portmode\": \"routed\", \"state\": \"down\", \"state_rsn_desc\": \"Administratively down\", \"speed\": \"auto\", \"ratemode\": \"D\"}, {\"interface\": \"Ethernet1/22\", \"vlan\": \"--\", \"type\": \"eth\", \"portmode\": \"routed\", \"state\": \"down\", \"state_rsn_desc\": \"Administratively down\", \"speed\": \"auto\", \"ratemode\": \"D\"}, {\"interface\": \"Ethernet1/23\", \"vlan\": \"--\", \"type\": \"eth\", \"portmode\": \"routed\", \"state\": \"down\", \"state_rsn_desc\": \"Administratively down\", \"speed\": \"auto\", \"ratemode\": \"D\"}, {\"interface\": \"Ethernet1/24\", \"vlan\": \"--\", \"type\": \"eth\", \"portmode\": \"routed\", \"state\": \"down\", \"state_rsn_desc\": \"Administratively down\", \"speed\": \"auto\", \"ratemode\": \"D\"}, {\"interface\": \"Ethernet1/25\", \"vlan\": \"--\", \"type\": \"eth\", \"portmode\": \"routed\", \"state\": \"down\", \"state_rsn_desc\": \"Administratively down\", \"speed\": \"auto\", \"ratemode\": \"D\"}, {\"interface\": \"Ethernet1/26\", \"vlan\": \"--\", \"type\": \"eth\", \"portmode\": \"routed\", \"state\": \"down\", \"state_rsn_desc\": \"Administratively down\", \"speed\": \"auto\", \"ratemode\": \"D\"}, {\"interface\": \"Ethernet1/27\", \"vlan\": \"--\", \"type\": \"eth\", \"portmode\": \"routed\", \"state\": \"down\", \"state_rsn_desc\": \"Administratively down\", \"speed\": \"auto\", \"ratemode\": \"D\"}, {\"interface\": \"Ethernet1/28\", \"vlan\": \"--\", \"type\": \"eth\", \"portmode\": \"routed\", \"state\": \"down\", \"state_rsn_desc\": \"Administratively down\", \"speed\": \"auto\", \"ratemode\": \"D\"}, {\"interface\": \"Ethernet1/29\", \"vlan\": \"--\", \"type\": \"eth\", \"portmode\": \"routed\", \"state\": \"down\", \"state_rsn_desc\": \"Administratively down\", \"speed\": \"auto\", \"ratemode\": \"D\"}, {\"interface\": \"Ethernet1/30\", \"vlan\": \"--\", \"type\": \"eth\", \"portmode\": \"routed\", \"state\": \"down\", \"state_rsn_desc\": \"Administratively down\", \"speed\": \"auto\", \"ratemode\": \"D\"}, {\"interface\": \"Ethernet1/31\", \"vlan\": \"--\", \"type\": \"eth\", \"portmode\": \"routed\", \"state\": \"down\", \"state_rsn_desc\": \"Administratively down\", \"speed\": \"auto\", \"ratemode\": \"D\"}, {\"interface\": \"Ethernet1/32\", \"vlan\": \"--\", \"type\": \"eth\", \"portmode\": \"routed\", \"state\": \"down\", \"state_rsn_desc\": \"Administratively down\", \"speed\": \"auto\", \"ratemode\": \"D\"}, {\"interface\": \"Ethernet1/33\", \"vlan\": \"--\", \"type\": \"eth\", \"portmode\": \"routed\", \"state\": \"down\", \"state_rsn_desc\": \"Administratively down\", \"speed\": \"auto\", \"ratemode\": \"D\"}, {\"interface\": \"Ethernet1/34\", \"vlan\": \"--\", \"type\": \"eth\", \"portmode\": \"routed\", \"state\": \"down\", \"state_rsn_desc\": \"Administratively down\", \"speed\": \"auto\", \"ratemode\": \"D\"}, {\"interface\": \"Ethernet1/35\", \"vlan\": \"--\", \"type\": \"eth\", \"portmode\": \"routed\", \"state\": \"down\", \"state_rsn_desc\": \"Administratively down\", \"speed\": \"auto\", \"ratemode\": \"D\"}, {\"interface\": \"Ethernet1/36\", \"vlan\": \"--\", \"type\": \"eth\", \"portmode\": \"routed\", \"state\": \"down\", \"state_rsn_desc\": \"Administratively down\", \"speed\": \"auto\", \"ratemode\": \"D\"}, {\"interface\": \"Ethernet1/37\", \"vlan\": \"--\", \"type\": \"eth\", \"portmode\": \"routed\", \"state\": \"down\", \"state_rsn_desc\": \"Administratively down\", \"speed\": \"auto\", \"ratemode\": \"D\"}, {\"interface\": \"Ethernet1/38\", \"vlan\": \"--\", \"type\": \"eth\", \"portmode\": \"routed\", \"state\": \"down\", \"state_rsn_desc\": \"Administratively down\", \"speed\": \"auto\", \"ratemode\": \"D\"}, {\"interface\": \"Ethernet1/39\", \"vlan\": \"--\", \"type\": \"eth\", \"portmode\": \"routed\", \"state\": \"down\", \"state_rsn_desc\": \"Administratively down\", \"speed\": \"auto\", \"ratemode\": \"D\"}, {\"interface\": \"Ethernet1/40\", \"vlan\": \"--\", \"type\": \"eth\", \"portmode\": \"routed\", \"state\": \"down\", \"state_rsn_desc\": \"Administratively down\", \"speed\": \"auto\", \"ratemode\": \"D\"}, {\"interface\": \"Ethernet1/41\", \"vlan\": \"--\", \"type\": \"eth\", \"portmode\": \"routed\", \"state\": \"down\", \"state_rsn_desc\": \"Administratively down\", \"speed\": \"auto\", \"ratemode\": \"D\"}, {\"interface\": \"Ethernet1/42\", \"vlan\": \"--\", \"type\": \"eth\", \"portmode\": \"routed\", \"state\": \"down\", \"state_rsn_desc\": \"Administratively down\", \"speed\": \"auto\", \"ratemode\": \"D\"}, {\"interface\": \"Ethernet1/43\", \"vlan\": \"--\", \"type\": \"eth\", \"portmode\": \"routed\", \"state\": \"down\", \"state_rsn_desc\": \"Administratively down\", \"speed\": \"auto\", \"ratemode\": \"D\"}, {\"interface\": \"Ethernet1/44\", \"vlan\": \"--\", \"type\": \"eth\", \"portmode\": \"routed\", \"state\": \"down\", \"state_rsn_desc\": \"Administratively down\", \"speed\": \"auto\", \"ratemode\": \"D\"}, {\"interface\": \"Ethernet1/45\", \"vlan\": \"--\", \"type\": \"eth\", \"portmode\": \"routed\", \"state\": \"down\", \"state_rsn_desc\": \"Administratively down\", \"speed\": \"auto\", \"ratemode\": \"D\"}, {\"interface\": \"Ethernet1/46\", \"vlan\": \"--\", \"type\": \"eth\", \"portmode\": \"routed\", \"state\": \"down\", \"state_rsn_desc\": \"Administratively down\", \"speed\": \"auto\", \"ratemode\": \"D\"}, {\"interface\": \"Ethernet1/47\", \"vlan\": \"--\", \"type\": \"eth\", \"portmode\": \"routed\", \"state\": \"down\", \"state_rsn_desc\": \"Administratively down\", \"speed\": \"auto\", \"ratemode\": \"D\"}, {\"interface\": \"Ethernet1/48\", \"vlan\": \"--\", \"type\": \"eth\", \"portmode\": \"routed\", \"state\": \"down\", \"state_rsn_desc\": \"Administratively down\", \"speed\": \"auto\", \"ratemode\": \"D\"}, {\"interface\": \"Ethernet1/49\", \"vlan\": \"--\", \"type\": \"eth\", \"portmode\": \"routed\", \"state\": \"down\", \"state_rsn_desc\": \"Administratively down\", \"speed\": \"auto\", \"ratemode\": \"D\"}, {\"interface\": \"Ethernet1/50\", \"vlan\": \"--\", \"type\": \"eth\", \"portmode\": \"routed\", \"state\": \"down\", \"state_rsn_desc\": \"Administratively down\", \"speed\": \"auto\", \"ratemode\": \"D\"}, {\"interface\": \"Ethernet1/51\", \"vlan\": \"--\", \"type\": \"eth\", \"portmode\": \"routed\", \"state\": \"down\", \"state_rsn_desc\": \"Administratively down\", \"speed\": \"auto\", \"ratemode\": \"D\"}, {\"interface\": \"Ethernet1/52\", \"vlan\": \"--\", \"type\": \"eth\", \"portmode\": \"routed\", \"state\": \"down\", \"state_rsn_desc\": \"Administratively down\", \"speed\": \"auto\", \"ratemode\": \"D\"}, {\"interface\": \"Ethernet1/53\", \"vlan\": \"--\", \"type\": \"eth\", \"portmode\": \"routed\", \"state\": \"down\", \"state_rsn_desc\": \"Administratively down\", \"speed\": \"auto\", \"ratemode\": \"D\"}, {\"interface\": \"Ethernet1/54\", \"vlan\": \"--\", \"type\": \"eth\", \"portmode\": \"routed\", \"state\": \"down\", \"state_rsn_desc\": \"Administratively down\", \"speed\": \"auto\", \"ratemode\": \"D\"}, {\"interface\": \"Ethernet1/55\", \"vlan\": \"--\", \"type\": \"eth\", \"portmode\": \"routed\", \"state\": \"down\", \"state_rsn_desc\": \"Administratively down\", \"speed\": \"auto\", \"ratemode\": \"D\"}, {\"interface\": \"Ethernet1/56\", \"vlan\": \"--\", \"type\": \"eth\", \"portmode\": \"routed\", \"state\": \"down\", \"state_rsn_desc\": \"Administratively down\", \"speed\": \"auto\", \"ratemode\": \"D\"}, {\"interface\": \"Ethernet1/57\", \"vlan\": \"--\", \"type\": \"eth\", \"portmode\": \"routed\", \"state\": \"down\", \"state_rsn_desc\": \"Administratively down\", \"speed\": \"auto\", \"ratemode\": \"D\"}, {\"interface\": \"Ethernet1/58\", \"vlan\": \"--\", \"type\": \"eth\", \"portmode\": \"routed\", \"state\": \"down\", \"state_rsn_desc\": \"Administratively down\", \"speed\": \"auto\", \"ratemode\": \"D\"}, {\"interface\": \"Ethernet1/59\", \"vlan\": \"--\", \"type\": \"eth\", \"portmode\": \"routed\", \"state\": \"down\", \"state_rsn_desc\": \"Administratively down\", \"speed\": \"auto\", \"ratemode\": \"D\"}, {\"interface\": \"Ethernet1/60\", \"vlan\": \"--\", \"type\": \"eth\", \"portmode\": \"routed\", \"state\": \"down\", \"state_rsn_desc\": \"Administratively down\", \"speed\": \"auto\", \"ratemode\": \"D\"}, {\"interface\": \"Ethernet1/61\", \"vlan\": \"--\", \"type\": \"eth\", \"portmode\": \"routed\", \"state\": \"down\", \"state_rsn_desc\": \"Administratively down\", \"speed\": \"auto\", \"ratemode\": \"D\"}, {\"interface\": \"Ethernet1/62\", \"vlan\": \"--\", \"type\": \"eth\", \"portmode\": \"routed\", \"state\": \"down\", \"state_rsn_desc\": \"Administratively down\", \"speed\": \"auto\", \"ratemode\": \"D\"}, {\"interface\": \"Ethernet1/63\", \"vlan\": \"--\", \"type\": \"eth\", \"portmode\": \"routed\", \"state\": \"down\", \"state_rsn_desc\": \"Administratively down\", \"speed\": \"auto\", \"ratemode\": \"D\"}, {\"interface\": \"Ethernet1/64\", \"vlan\": \"--\", \"type\": \"eth\", \"portmode\": \"routed\", \"state\": \"down\", \"state_rsn_desc\": \"Administratively down\", \"speed\": \"auto\", \"ratemode\": \"D\"}, {\"interface\": \"Ethernet1/65\", \"vlan\": \"--\", \"type\": \"eth\", \"portmode\": \"routed\", \"state\": \"down\", \"state_rsn_desc\": \"Administratively down\", \"speed\": \"auto\", \"ratemode\": \"D\"}, {\"interface\": \"Ethernet1/66\", \"vlan\": \"--\", \"type\": \"eth\", \"portmode\": \"routed\", \"state\": \"down\", \"state_rsn_desc\": \"Administratively down\", \"speed\": \"auto\", \"ratemode\": \"D\"}, {\"interface\": \"Ethernet1/67\", \"vlan\": \"--\", \"type\": \"eth\", \"portmode\": \"routed\", \"state\": \"down\", \"state_rsn_desc\": \"Administratively down\", \"speed\": \"auto\", \"ratemode\": \"D\"}, {\"interface\": \"Ethernet1/68\", \"vlan\": \"--\", \"type\": \"eth\", \"portmode\": \"routed\", \"state\": \"down\", \"state_rsn_desc\": \"Administratively down\", \"speed\": \"auto\", \"ratemode\": \"D\"}, {\"interface\": \"Ethernet1/69\", \"vlan\": \"--\", \"type\": \"eth\", \"portmode\": \"routed\", \"state\": \"down\", \"state_rsn_desc\": \"Administratively down\", \"speed\": \"auto\", \"ratemode\": \"D\"}, {\"interface\": \"Ethernet1/70\", \"vlan\": \"--\", \"type\": \"eth\", \"portmode\": \"routed\", \"state\": \"down\", \"state_rsn_desc\": \"Administratively down\", \"speed\": \"auto\", \"ratemode\": \"D\"}, {\"interface\": \"Ethernet1/71\", \"vlan\": \"--\", \"type\": \"eth\", \"portmode\": \"routed\", \"state\": \"down\", \"state_rsn_desc\": \"Administratively down\", \"speed\": \"auto\", \"ratemode\": \"D\"}, {\"interface\": \"Ethernet1/72\", \"vlan\": \"--\", \"type\": \"eth\", \"portmode\": \"routed\", \"state\": \"down\", \"state_rsn_desc\": \"Administratively down\", \"speed\": \"auto\", \"ratemode\": \"D\"}, {\"interface\": \"Ethernet1/73\", \"vlan\": \"--\", \"type\": \"eth\", \"portmode\": \"routed\", \"state\": \"down\", \"state_rsn_desc\": \"Administratively down\", \"speed\": \"auto\", \"ratemode\": \"D\"}, {\"interface\": \"Ethernet1/74\", \"vlan\": \"--\", \"type\": \"eth\", \"portmode\": \"routed\", \"state\": \"down\", \"state_rsn_desc\": \"Administratively down\", \"speed\": \"auto\", \"ratemode\": \"D\"}, {\"interface\": \"Ethernet1/75\", \"vlan\": \"--\", \"type\": \"eth\", \"portmode\": \"routed\", \"state\": \"down\", \"state_rsn_desc\": \"Administratively down\", \"speed\": \"auto\", \"ratemode\": \"D\"}, {\"interface\": \"Ethernet1/76\", \"vlan\": \"--\", \"type\": \"eth\", \"portmode\": \"routed\", \"state\": \"down\", \"state_rsn_desc\": \"Administratively down\", \"speed\": \"auto\", \"ratemode\": \"D\"}, {\"interface\": \"Ethernet1/77\", \"vlan\": \"--\", \"type\": \"eth\", \"portmode\": \"routed\", \"state\": \"down\", \"state_rsn_desc\": \"Administratively down\", \"speed\": \"auto\", \"ratemode\": \"D\"}, {\"interface\": \"Ethernet1/78\", \"vlan\": \"--\", \"type\": \"eth\", \"portmode\": \"routed\", \"state\": \"down\", \"state_rsn_desc\": \"Administratively down\", \"speed\": \"auto\", \"ratemode\": \"D\"}, {\"interface\": \"Ethernet1/79\", \"vlan\": \"--\", \"type\": \"eth\", \"portmode\": \"routed\", \"state\": \"down\", \"state_rsn_desc\": \"Administratively down\", \"speed\": \"auto\", \"ratemode\": \"D\"}, {\"interface\": \"Ethernet1/80\", \"vlan\": \"--\", \"type\": \"eth\", \"portmode\": \"routed\", \"state\": \"down\", \"state_rsn_desc\": \"Administratively down\", \"speed\": \"auto\", \"ratemode\": \"D\"}, {\"interface\": \"Ethernet1/81\", \"vlan\": \"--\", \"type\": \"eth\", \"portmode\": \"routed\", \"state\": \"down\", \"state_rsn_desc\": \"Administratively down\", \"speed\": \"auto\", \"ratemode\": \"D\"}, {\"interface\": \"Ethernet1/82\", \"vlan\": \"--\", \"type\": \"eth\", \"portmode\": \"routed\", \"state\": \"down\", \"state_rsn_desc\": \"Administratively down\", \"speed\": \"auto\", \"ratemode\": \"D\"}, {\"interface\": \"Ethernet1/83\", \"vlan\": \"--\", \"type\": \"eth\", \"portmode\": \"routed\", \"state\": \"down\", \"state_rsn_desc\": \"Administratively down\", \"speed\": \"auto\", \"ratemode\": \"D\"}, {\"interface\": \"Ethernet1/84\", \"vlan\": \"--\", \"type\": \"eth\", \"portmode\": \"routed\", \"state\": \"down\", \"state_rsn_desc\": \"Administratively down\", \"speed\": \"auto\", \"ratemode\": \"D\"}, {\"interface\": \"Ethernet1/85\", \"vlan\": \"--\", \"type\": \"eth\", \"portmode\": \"routed\", \"state\": \"down\", \"state_rsn_desc\": \"Administratively down\", \"speed\": \"auto\", \"ratemode\": \"D\"}, {\"interface\": \"Ethernet1/86\", \"vlan\": \"--\", \"type\": \"eth\", \"portmode\": \"routed\", \"state\": \"down\", \"state_rsn_desc\": \"Administratively down\", \"speed\": \"auto\", \"ratemode\": \"D\"}, {\"interface\": \"Ethernet1/87\", \"vlan\": \"--\", \"type\": \"eth\", \"portmode\": \"routed\", \"state\": \"down\", \"state_rsn_desc\": \"Administratively down\", \"speed\": \"auto\", \"ratemode\": \"D\"}, {\"interface\": \"Ethernet1/88\", \"vlan\": \"--\", \"type\": \"eth\", \"portmode\": \"routed\", \"state\": \"down\", \"state_rsn_desc\": \"Administratively down\", \"speed\": \"auto\", \"ratemode\": \"D\"}, {\"interface\": \"Ethernet1/89\", \"vlan\": \"--\", \"type\": \"eth\", \"portmode\": \"routed\", \"state\": \"down\", \"state_rsn_desc\": \"Administratively down\", \"speed\": \"auto\", \"ratemode\": \"D\"}, {\"interface\": \"Ethernet1/90\", \"vlan\": \"--\", \"type\": \"eth\", \"portmode\": \"routed\", \"state\": \"down\", \"state_rsn_desc\": \"Administratively down\", \"speed\": \"auto\", \"ratemode\": \"D\"}, {\"interface\": \"Ethernet1/91\", \"vlan\": \"--\", \"type\": \"eth\", \"portmode\": \"routed\", \"state\": \"down\", \"state_rsn_desc\": \"Administratively down\", \"speed\": \"auto\", \"ratemode\": \"D\"}, {\"interface\": \"Ethernet1/92\", \"vlan\": \"--\", \"type\": \"eth\", \"portmode\": \"routed\", \"state\": \"down\", \"state_rsn_desc\": \"Administratively down\", \"speed\": \"auto\", \"ratemode\": \"D\"}, {\"interface\": \"Ethernet1/93\", \"vlan\": \"--\", \"type\": \"eth\", \"portmode\": \"routed\", \"state\": \"down\", \"state_rsn_desc\": \"Administratively down\", \"speed\": \"auto\", \"ratemode\": \"D\"}, {\"interface\": \"Ethernet1/94\", \"vlan\": \"--\", \"type\": \"eth\", \"portmode\": \"routed\", \"state\": \"down\", \"state_rsn_desc\": \"Administratively down\", \"speed\": \"auto\", \"ratemode\": \"D\"}, {\"interface\": \"Ethernet1/95\", \"vlan\": \"--\", \"type\": \"eth\", \"portmode\": \"routed\", \"state\": \"down\", \"state_rsn_desc\": \"Administratively down\", \"speed\": \"auto\", \"ratemode\": \"D\"}, {\"interface\": \"Ethernet1/96\", \"vlan\": \"--\", \"type\": \"eth\", \"portmode\": \"routed\", \"state\": \"down\", \"state_rsn_desc\": \"Administratively down\", \"speed\": \"auto\", \"ratemode\": \"D\"}, {\"interface\": \"Ethernet1/97\", \"vlan\": \"--\", \"type\": \"eth\", \"portmode\": \"routed\", \"state\": \"down\", \"state_rsn_desc\": \"Administratively down\", \"speed\": \"auto\", \"ratemode\": \"D\"}, {\"interface\": \"Ethernet1/98\", \"vlan\": \"--\", \"type\": \"eth\", \"portmode\": \"routed\", \"state\": \"down\", \"state_rsn_desc\": \"Administratively down\", \"speed\": \"auto\", \"ratemode\": \"D\"}, {\"interface\": \"Ethernet1/99\", \"vlan\": \"--\", \"type\": \"eth\", \"portmode\": \"routed\", \"state\": \"down\", \"state_rsn_desc\": \"Administratively down\", \"speed\": \"auto\", \"ratemode\": \"D\"}, {\"interface\": \"Ethernet1/100\", \"vlan\": \"--\", \"type\": \"eth\", \"portmode\": \"routed\", \"state\": \"down\", \"state_rsn_desc\": \"Administratively down\", \"speed\": \"auto\", \"ratemode\": \"D\"}, {\"interface\": \"Ethernet1/101\", \"vlan\": \"--\", \"type\": \"eth\", \"portmode\": \"routed\", \"state\": \"down\", \"state_rsn_desc\": \"Administratively down\", \"speed\": \"auto\", \"ratemode\": \"D\"}, {\"interface\": \"Ethernet1/102\", \"vlan\": \"--\", \"type\": \"eth\", \"portmode\": \"routed\", \"state\": \"down\", \"state_rsn_desc\": \"Administratively down\", \"speed\": \"auto\", \"ratemode\": \"D\"}, {\"interface\": \"Ethernet1/103\", \"vlan\": \"--\", \"type\": \"eth\", \"portmode\": \"routed\", \"state\": \"down\", \"state_rsn_desc\": \"Administratively down\", \"speed\": \"auto\", \"ratemode\": \"D\"}, {\"interface\": \"Ethernet1/104\", \"vlan\": \"--\", \"type\": \"eth\", \"portmode\": \"routed\", \"state\": \"down\", \"state_rsn_desc\": \"Administratively down\", \"speed\": \"auto\", \"ratemode\": \"D\"}, {\"interface\": \"Ethernet1/105\", \"vlan\": \"--\", \"type\": \"eth\", \"portmode\": \"routed\", \"state\": \"down\", \"state_rsn_desc\": \"Administratively down\", \"speed\": \"auto\", \"ratemode\": \"D\"}, {\"interface\": \"Ethernet1/106\", \"vlan\": \"--\", \"type\": \"eth\", \"portmode\": \"routed\", \"state\": \"down\", \"state_rsn_desc\": \"Administratively down\", \"speed\": \"auto\", \"ratemode\": \"D\"}, {\"interface\": \"Ethernet1/107\", \"vlan\": \"--\", \"type\": \"eth\", \"portmode\": \"routed\", \"state\": \"down\", \"state_rsn_desc\": \"Administratively down\", \"speed\": \"auto\", \"ratemode\": \"D\"}, {\"interface\": \"Ethernet1/108\", \"vlan\": \"--\", \"type\": \"eth\", \"portmode\": \"routed\", \"state\": \"down\", \"state_rsn_desc\": \"Administratively down\", \"speed\": \"auto\", \"ratemode\": \"D\"}, {\"interface\": \"Ethernet1/109\", \"vlan\": \"--\", \"type\": \"eth\", \"portmode\": \"routed\", \"state\": \"down\", \"state_rsn_desc\": \"Administratively down\", \"speed\": \"auto\", \"ratemode\": \"D\"}, {\"interface\": \"Ethernet1/110\", \"vlan\": \"--\", \"type\": \"eth\", \"portmode\": \"routed\", \"state\": \"down\", \"state_rsn_desc\": \"Administratively down\", \"speed\": \"auto\", \"ratemode\": \"D\"}, {\"interface\": \"Ethernet1/111\", \"vlan\": \"--\", \"type\": \"eth\", \"portmode\": \"routed\", \"state\": \"down\", \"state_rsn_desc\": \"Administratively down\", \"speed\": \"auto\", \"ratemode\": \"D\"}, {\"interface\": \"Ethernet1/112\", \"vlan\": \"--\", \"type\": \"eth\", \"portmode\": \"routed\", \"state\": \"down\", \"state_rsn_desc\": \"Administratively down\", \"speed\": \"auto\", \"ratemode\": \"D\"}, {\"interface\": \"Ethernet1/113\", \"vlan\": \"--\", \"type\": \"eth\", \"portmode\": \"routed\", \"state\": \"down\", \"state_rsn_desc\": \"Administratively down\", \"speed\": \"auto\", \"ratemode\": \"D\"}, {\"interface\": \"Ethernet1/114\", \"vlan\": \"--\", \"type\": \"eth\", \"portmode\": \"routed\", \"state\": \"down\", \"state_rsn_desc\": \"Administratively down\", \"speed\": \"auto\", \"ratemode\": \"D\"}, {\"interface\": \"Ethernet1/115\", \"vlan\": \"--\", \"type\": \"eth\", \"portmode\": \"routed\", \"state\": \"down\", \"state_rsn_desc\": \"Administratively down\", \"speed\": \"auto\", \"ratemode\": \"D\"}, {\"interface\": \"Ethernet1/116\", \"vlan\": \"--\", \"type\": \"eth\", \"portmode\": \"routed\", \"state\": \"down\", \"state_rsn_desc\": \"Administratively down\", \"speed\": \"auto\", \"ratemode\": \"D\"}, {\"interface\": \"Ethernet1/117\", \"vlan\": \"--\", \"type\": \"eth\", \"portmode\": \"routed\", \"state\": \"down\", \"state_rsn_desc\": \"Administratively down\", \"speed\": \"auto\", \"ratemode\": \"D\"}, {\"interface\": \"Ethernet1/118\", \"vlan\": \"--\", \"type\": \"eth\", \"portmode\": \"routed\", \"state\": \"down\", \"state_rsn_desc\": \"Administratively down\", \"speed\": \"auto\", \"ratemode\": \"D\"}, {\"interface\": \"Ethernet1/119\", \"vlan\": \"--\", \"type\": \"eth\", \"portmode\": \"routed\", \"state\": \"down\", \"state_rsn_desc\": \"Administratively down\", \"speed\": \"auto\", \"ratemode\": \"D\"}, {\"interface\": \"Ethernet1/120\", \"vlan\": \"--\", \"type\": \"eth\", \"portmode\": \"routed\", \"state\": \"down\", \"state_rsn_desc\": \"Administratively down\", \"speed\": \"auto\", \"ratemode\": \"D\"}, {\"interface\": \"Ethernet1/121\", \"vlan\": \"--\", \"type\": \"eth\", \"portmode\": \"routed\", \"state\": \"down\", \"state_rsn_desc\": \"Administratively down\", \"speed\": \"auto\", \"ratemode\": \"D\"}, {\"interface\": \"Ethernet1/122\", \"vlan\": \"--\", \"type\": \"eth\", \"portmode\": \"routed\", \"state\": \"down\", \"state_rsn_desc\": \"Administratively down\", \"speed\": \"auto\", \"ratemode\": \"D\"}, {\"interface\": \"Ethernet1/123\", \"vlan\": \"--\", \"type\": \"eth\", \"portmode\": \"routed\", \"state\": \"down\", \"state_rsn_desc\": \"Administratively down\", \"speed\": \"auto\", \"ratemode\": \"D\"}, {\"interface\": \"Ethernet1/124\", \"vlan\": \"--\", \"type\": \"eth\", \"portmode\": \"routed\", \"state\": \"down\", \"state_rsn_desc\": \"Administratively down\", \"speed\": \"auto\", \"ratemode\": \"D\"}, {\"interface\": \"Ethernet1/125\", \"vlan\": \"--\", \"type\": \"eth\", \"portmode\": \"routed\", \"state\": \"down\", \"state_rsn_desc\": \"Administratively down\", \"speed\": \"auto\", \"ratemode\": \"D\"}, {\"interface\": \"Ethernet1/126\", \"vlan\": \"--\", \"type\": \"eth\", \"portmode\": \"routed\", \"state\": \"down\", \"state_rsn_desc\": \"Administratively down\", \"speed\": \"auto\", \"ratemode\": \"D\"}, {\"interface\": \"Ethernet1/127\", \"vlan\": \"--\", \"type\": \"eth\", \"portmode\": \"routed\", \"state\": \"down\", \"state_rsn_desc\": \"Administratively down\", \"speed\": \"auto\", \"ratemode\": \"D\"}, {\"interface\": \"Ethernet1/128\", \"vlan\": \"--\", \"type\": \"eth\", \"portmode\": \"routed\", \"state\": \"down\", \"state_rsn_desc\": \"Administratively down\", \"speed\": \"auto\", \"ratemode\": \"D\"}]}}"}
+{
+    "command": "show interface brief | json",
+    "response": {
+        "TABLE_interface": {
+            "ROW_interface": [
+                {
+                    "interface": "mgmt0",
+                    "ip_addr": "192.168.101.14",
+                    "mtu": "1500",
+                    "speed": "1000",
+                    "state": "up"
+                },
+                {
+                    "interface": "Ethernet1/1",
+                    "portmode": "routed",
+                    "ratemode": "D",
+                    "speed": "auto",
+                    "state": "down",
+                    "state_rsn_desc": "Administratively down",
+                    "type": "eth",
+                    "vlan": "--"
+                },
+                {
+                    "interface": "Ethernet1/2",
+                    "portmode": "routed",
+                    "ratemode": "D",
+                    "speed": "auto",
+                    "state": "down",
+                    "state_rsn_desc": "Administratively down",
+                    "type": "eth",
+                    "vlan": "--"
+                },
+                {
+                    "interface": "Ethernet1/3",
+                    "portmode": "routed",
+                    "ratemode": "D",
+                    "speed": "auto",
+                    "state": "down",
+                    "state_rsn_desc": "Administratively down",
+                    "type": "eth",
+                    "vlan": "--"
+                },
+                {
+                    "interface": "Ethernet1/4",
+                    "portmode": "routed",
+                    "ratemode": "D",
+                    "speed": "auto",
+                    "state": "down",
+                    "state_rsn_desc": "Administratively down",
+                    "type": "eth",
+                    "vlan": "--"
+                },
+                {
+                    "interface": "Ethernet1/5",
+                    "portmode": "routed",
+                    "ratemode": "D",
+                    "speed": "auto",
+                    "state": "down",
+                    "state_rsn_desc": "Administratively down",
+                    "type": "eth",
+                    "vlan": "--"
+                },
+                {
+                    "interface": "Ethernet1/6",
+                    "portmode": "routed",
+                    "ratemode": "D",
+                    "speed": "auto",
+                    "state": "down",
+                    "state_rsn_desc": "Administratively down",
+                    "type": "eth",
+                    "vlan": "--"
+                },
+                {
+                    "interface": "Ethernet1/7",
+                    "portmode": "routed",
+                    "ratemode": "D",
+                    "speed": "auto",
+                    "state": "down",
+                    "state_rsn_desc": "Administratively down",
+                    "type": "eth",
+                    "vlan": "--"
+                },
+                {
+                    "interface": "Ethernet1/8",
+                    "portmode": "routed",
+                    "ratemode": "D",
+                    "speed": "auto",
+                    "state": "down",
+                    "state_rsn_desc": "Administratively down",
+                    "type": "eth",
+                    "vlan": "--"
+                },
+                {
+                    "interface": "Ethernet1/9",
+                    "portmode": "routed",
+                    "ratemode": "D",
+                    "speed": "auto",
+                    "state": "down",
+                    "state_rsn_desc": "Administratively down",
+                    "type": "eth",
+                    "vlan": "--"
+                },
+                {
+                    "interface": "Ethernet1/10",
+                    "portmode": "routed",
+                    "ratemode": "D",
+                    "speed": "auto",
+                    "state": "down",
+                    "state_rsn_desc": "Administratively down",
+                    "type": "eth",
+                    "vlan": "--"
+                },
+                {
+                    "interface": "Ethernet1/11",
+                    "portmode": "routed",
+                    "ratemode": "D",
+                    "speed": "auto",
+                    "state": "down",
+                    "state_rsn_desc": "Administratively down",
+                    "type": "eth",
+                    "vlan": "--"
+                },
+                {
+                    "interface": "Ethernet1/12",
+                    "portmode": "routed",
+                    "ratemode": "D",
+                    "speed": "auto",
+                    "state": "down",
+                    "state_rsn_desc": "Administratively down",
+                    "type": "eth",
+                    "vlan": "--"
+                },
+                {
+                    "interface": "Ethernet1/13",
+                    "portmode": "routed",
+                    "ratemode": "D",
+                    "speed": "auto",
+                    "state": "down",
+                    "state_rsn_desc": "Administratively down",
+                    "type": "eth",
+                    "vlan": "--"
+                },
+                {
+                    "interface": "Ethernet1/14",
+                    "portmode": "routed",
+                    "ratemode": "D",
+                    "speed": "auto",
+                    "state": "down",
+                    "state_rsn_desc": "Administratively down",
+                    "type": "eth",
+                    "vlan": "--"
+                },
+                {
+                    "interface": "Ethernet1/15",
+                    "portmode": "routed",
+                    "ratemode": "D",
+                    "speed": "auto",
+                    "state": "down",
+                    "state_rsn_desc": "Administratively down",
+                    "type": "eth",
+                    "vlan": "--"
+                },
+                {
+                    "interface": "Ethernet1/16",
+                    "portmode": "routed",
+                    "ratemode": "D",
+                    "speed": "auto",
+                    "state": "down",
+                    "state_rsn_desc": "Administratively down",
+                    "type": "eth",
+                    "vlan": "--"
+                },
+                {
+                    "interface": "Ethernet1/17",
+                    "portmode": "routed",
+                    "ratemode": "D",
+                    "speed": "auto",
+                    "state": "down",
+                    "state_rsn_desc": "Administratively down",
+                    "type": "eth",
+                    "vlan": "--"
+                },
+                {
+                    "interface": "Ethernet1/18",
+                    "portmode": "routed",
+                    "ratemode": "D",
+                    "speed": "auto",
+                    "state": "down",
+                    "state_rsn_desc": "Administratively down",
+                    "type": "eth",
+                    "vlan": "--"
+                },
+                {
+                    "interface": "Ethernet1/19",
+                    "portmode": "routed",
+                    "ratemode": "D",
+                    "speed": "auto",
+                    "state": "down",
+                    "state_rsn_desc": "Administratively down",
+                    "type": "eth",
+                    "vlan": "--"
+                },
+                {
+                    "interface": "Ethernet1/20",
+                    "portmode": "routed",
+                    "ratemode": "D",
+                    "speed": "auto",
+                    "state": "down",
+                    "state_rsn_desc": "Administratively down",
+                    "type": "eth",
+                    "vlan": "--"
+                },
+                {
+                    "interface": "Ethernet1/21",
+                    "portmode": "routed",
+                    "ratemode": "D",
+                    "speed": "auto",
+                    "state": "down",
+                    "state_rsn_desc": "Administratively down",
+                    "type": "eth",
+                    "vlan": "--"
+                },
+                {
+                    "interface": "Ethernet1/22",
+                    "portmode": "routed",
+                    "ratemode": "D",
+                    "speed": "auto",
+                    "state": "down",
+                    "state_rsn_desc": "Administratively down",
+                    "type": "eth",
+                    "vlan": "--"
+                },
+                {
+                    "interface": "Ethernet1/23",
+                    "portmode": "routed",
+                    "ratemode": "D",
+                    "speed": "auto",
+                    "state": "down",
+                    "state_rsn_desc": "Administratively down",
+                    "type": "eth",
+                    "vlan": "--"
+                },
+                {
+                    "interface": "Ethernet1/24",
+                    "portmode": "routed",
+                    "ratemode": "D",
+                    "speed": "auto",
+                    "state": "down",
+                    "state_rsn_desc": "Administratively down",
+                    "type": "eth",
+                    "vlan": "--"
+                },
+                {
+                    "interface": "Ethernet1/25",
+                    "portmode": "routed",
+                    "ratemode": "D",
+                    "speed": "auto",
+                    "state": "down",
+                    "state_rsn_desc": "Administratively down",
+                    "type": "eth",
+                    "vlan": "--"
+                },
+                {
+                    "interface": "Ethernet1/26",
+                    "portmode": "routed",
+                    "ratemode": "D",
+                    "speed": "auto",
+                    "state": "down",
+                    "state_rsn_desc": "Administratively down",
+                    "type": "eth",
+                    "vlan": "--"
+                },
+                {
+                    "interface": "Ethernet1/27",
+                    "portmode": "routed",
+                    "ratemode": "D",
+                    "speed": "auto",
+                    "state": "down",
+                    "state_rsn_desc": "Administratively down",
+                    "type": "eth",
+                    "vlan": "--"
+                },
+                {
+                    "interface": "Ethernet1/28",
+                    "portmode": "routed",
+                    "ratemode": "D",
+                    "speed": "auto",
+                    "state": "down",
+                    "state_rsn_desc": "Administratively down",
+                    "type": "eth",
+                    "vlan": "--"
+                },
+                {
+                    "interface": "Ethernet1/29",
+                    "portmode": "routed",
+                    "ratemode": "D",
+                    "speed": "auto",
+                    "state": "down",
+                    "state_rsn_desc": "Administratively down",
+                    "type": "eth",
+                    "vlan": "--"
+                },
+                {
+                    "interface": "Ethernet1/30",
+                    "portmode": "routed",
+                    "ratemode": "D",
+                    "speed": "auto",
+                    "state": "down",
+                    "state_rsn_desc": "Administratively down",
+                    "type": "eth",
+                    "vlan": "--"
+                },
+                {
+                    "interface": "Ethernet1/31",
+                    "portmode": "routed",
+                    "ratemode": "D",
+                    "speed": "auto",
+                    "state": "down",
+                    "state_rsn_desc": "Administratively down",
+                    "type": "eth",
+                    "vlan": "--"
+                },
+                {
+                    "interface": "Ethernet1/32",
+                    "portmode": "routed",
+                    "ratemode": "D",
+                    "speed": "auto",
+                    "state": "down",
+                    "state_rsn_desc": "Administratively down",
+                    "type": "eth",
+                    "vlan": "--"
+                },
+                {
+                    "interface": "Ethernet1/33",
+                    "portmode": "routed",
+                    "ratemode": "D",
+                    "speed": "auto",
+                    "state": "down",
+                    "state_rsn_desc": "Administratively down",
+                    "type": "eth",
+                    "vlan": "--"
+                },
+                {
+                    "interface": "Ethernet1/34",
+                    "portmode": "routed",
+                    "ratemode": "D",
+                    "speed": "auto",
+                    "state": "down",
+                    "state_rsn_desc": "Administratively down",
+                    "type": "eth",
+                    "vlan": "--"
+                },
+                {
+                    "interface": "Ethernet1/35",
+                    "portmode": "routed",
+                    "ratemode": "D",
+                    "speed": "auto",
+                    "state": "down",
+                    "state_rsn_desc": "Administratively down",
+                    "type": "eth",
+                    "vlan": "--"
+                },
+                {
+                    "interface": "Ethernet1/36",
+                    "portmode": "routed",
+                    "ratemode": "D",
+                    "speed": "auto",
+                    "state": "down",
+                    "state_rsn_desc": "Administratively down",
+                    "type": "eth",
+                    "vlan": "--"
+                },
+                {
+                    "interface": "Ethernet1/37",
+                    "portmode": "routed",
+                    "ratemode": "D",
+                    "speed": "auto",
+                    "state": "down",
+                    "state_rsn_desc": "Administratively down",
+                    "type": "eth",
+                    "vlan": "--"
+                },
+                {
+                    "interface": "Ethernet1/38",
+                    "portmode": "routed",
+                    "ratemode": "D",
+                    "speed": "auto",
+                    "state": "down",
+                    "state_rsn_desc": "Administratively down",
+                    "type": "eth",
+                    "vlan": "--"
+                },
+                {
+                    "interface": "Ethernet1/39",
+                    "portmode": "routed",
+                    "ratemode": "D",
+                    "speed": "auto",
+                    "state": "down",
+                    "state_rsn_desc": "Administratively down",
+                    "type": "eth",
+                    "vlan": "--"
+                },
+                {
+                    "interface": "Ethernet1/40",
+                    "portmode": "routed",
+                    "ratemode": "D",
+                    "speed": "auto",
+                    "state": "down",
+                    "state_rsn_desc": "Administratively down",
+                    "type": "eth",
+                    "vlan": "--"
+                },
+                {
+                    "interface": "Ethernet1/41",
+                    "portmode": "routed",
+                    "ratemode": "D",
+                    "speed": "auto",
+                    "state": "down",
+                    "state_rsn_desc": "Administratively down",
+                    "type": "eth",
+                    "vlan": "--"
+                },
+                {
+                    "interface": "Ethernet1/42",
+                    "portmode": "routed",
+                    "ratemode": "D",
+                    "speed": "auto",
+                    "state": "down",
+                    "state_rsn_desc": "Administratively down",
+                    "type": "eth",
+                    "vlan": "--"
+                },
+                {
+                    "interface": "Ethernet1/43",
+                    "portmode": "routed",
+                    "ratemode": "D",
+                    "speed": "auto",
+                    "state": "down",
+                    "state_rsn_desc": "Administratively down",
+                    "type": "eth",
+                    "vlan": "--"
+                },
+                {
+                    "interface": "Ethernet1/44",
+                    "portmode": "routed",
+                    "ratemode": "D",
+                    "speed": "auto",
+                    "state": "down",
+                    "state_rsn_desc": "Administratively down",
+                    "type": "eth",
+                    "vlan": "--"
+                },
+                {
+                    "interface": "Ethernet1/45",
+                    "portmode": "routed",
+                    "ratemode": "D",
+                    "speed": "auto",
+                    "state": "down",
+                    "state_rsn_desc": "Administratively down",
+                    "type": "eth",
+                    "vlan": "--"
+                },
+                {
+                    "interface": "Ethernet1/46",
+                    "portmode": "routed",
+                    "ratemode": "D",
+                    "speed": "auto",
+                    "state": "down",
+                    "state_rsn_desc": "Administratively down",
+                    "type": "eth",
+                    "vlan": "--"
+                },
+                {
+                    "interface": "Ethernet1/47",
+                    "portmode": "routed",
+                    "ratemode": "D",
+                    "speed": "auto",
+                    "state": "down",
+                    "state_rsn_desc": "Administratively down",
+                    "type": "eth",
+                    "vlan": "--"
+                },
+                {
+                    "interface": "Ethernet1/48",
+                    "portmode": "routed",
+                    "ratemode": "D",
+                    "speed": "auto",
+                    "state": "down",
+                    "state_rsn_desc": "Administratively down",
+                    "type": "eth",
+                    "vlan": "--"
+                },
+                {
+                    "interface": "Ethernet1/49",
+                    "portmode": "routed",
+                    "ratemode": "D",
+                    "speed": "auto",
+                    "state": "down",
+                    "state_rsn_desc": "Administratively down",
+                    "type": "eth",
+                    "vlan": "--"
+                },
+                {
+                    "interface": "Ethernet1/50",
+                    "portmode": "routed",
+                    "ratemode": "D",
+                    "speed": "auto",
+                    "state": "down",
+                    "state_rsn_desc": "Administratively down",
+                    "type": "eth",
+                    "vlan": "--"
+                },
+                {
+                    "interface": "Ethernet1/51",
+                    "portmode": "routed",
+                    "ratemode": "D",
+                    "speed": "auto",
+                    "state": "down",
+                    "state_rsn_desc": "Administratively down",
+                    "type": "eth",
+                    "vlan": "--"
+                },
+                {
+                    "interface": "Ethernet1/52",
+                    "portmode": "routed",
+                    "ratemode": "D",
+                    "speed": "auto",
+                    "state": "down",
+                    "state_rsn_desc": "Administratively down",
+                    "type": "eth",
+                    "vlan": "--"
+                },
+                {
+                    "interface": "Ethernet1/53",
+                    "portmode": "routed",
+                    "ratemode": "D",
+                    "speed": "auto",
+                    "state": "down",
+                    "state_rsn_desc": "Administratively down",
+                    "type": "eth",
+                    "vlan": "--"
+                },
+                {
+                    "interface": "Ethernet1/54",
+                    "portmode": "routed",
+                    "ratemode": "D",
+                    "speed": "auto",
+                    "state": "down",
+                    "state_rsn_desc": "Administratively down",
+                    "type": "eth",
+                    "vlan": "--"
+                },
+                {
+                    "interface": "Ethernet1/55",
+                    "portmode": "routed",
+                    "ratemode": "D",
+                    "speed": "auto",
+                    "state": "down",
+                    "state_rsn_desc": "Administratively down",
+                    "type": "eth",
+                    "vlan": "--"
+                },
+                {
+                    "interface": "Ethernet1/56",
+                    "portmode": "routed",
+                    "ratemode": "D",
+                    "speed": "auto",
+                    "state": "down",
+                    "state_rsn_desc": "Administratively down",
+                    "type": "eth",
+                    "vlan": "--"
+                },
+                {
+                    "interface": "Ethernet1/57",
+                    "portmode": "routed",
+                    "ratemode": "D",
+                    "speed": "auto",
+                    "state": "down",
+                    "state_rsn_desc": "Administratively down",
+                    "type": "eth",
+                    "vlan": "--"
+                },
+                {
+                    "interface": "Ethernet1/58",
+                    "portmode": "routed",
+                    "ratemode": "D",
+                    "speed": "auto",
+                    "state": "down",
+                    "state_rsn_desc": "Administratively down",
+                    "type": "eth",
+                    "vlan": "--"
+                },
+                {
+                    "interface": "Ethernet1/59",
+                    "portmode": "routed",
+                    "ratemode": "D",
+                    "speed": "auto",
+                    "state": "down",
+                    "state_rsn_desc": "Administratively down",
+                    "type": "eth",
+                    "vlan": "--"
+                },
+                {
+                    "interface": "Ethernet1/60",
+                    "portmode": "routed",
+                    "ratemode": "D",
+                    "speed": "auto",
+                    "state": "down",
+                    "state_rsn_desc": "Administratively down",
+                    "type": "eth",
+                    "vlan": "--"
+                },
+                {
+                    "interface": "Ethernet1/61",
+                    "portmode": "routed",
+                    "ratemode": "D",
+                    "speed": "auto",
+                    "state": "down",
+                    "state_rsn_desc": "Administratively down",
+                    "type": "eth",
+                    "vlan": "--"
+                },
+                {
+                    "interface": "Ethernet1/62",
+                    "portmode": "routed",
+                    "ratemode": "D",
+                    "speed": "auto",
+                    "state": "down",
+                    "state_rsn_desc": "Administratively down",
+                    "type": "eth",
+                    "vlan": "--"
+                },
+                {
+                    "interface": "Ethernet1/63",
+                    "portmode": "routed",
+                    "ratemode": "D",
+                    "speed": "auto",
+                    "state": "down",
+                    "state_rsn_desc": "Administratively down",
+                    "type": "eth",
+                    "vlan": "--"
+                },
+                {
+                    "interface": "Ethernet1/64",
+                    "portmode": "routed",
+                    "ratemode": "D",
+                    "speed": "auto",
+                    "state": "down",
+                    "state_rsn_desc": "Administratively down",
+                    "type": "eth",
+                    "vlan": "--"
+                },
+                {
+                    "interface": "Ethernet1/65",
+                    "portmode": "routed",
+                    "ratemode": "D",
+                    "speed": "auto",
+                    "state": "down",
+                    "state_rsn_desc": "Administratively down",
+                    "type": "eth",
+                    "vlan": "--"
+                },
+                {
+                    "interface": "Ethernet1/66",
+                    "portmode": "routed",
+                    "ratemode": "D",
+                    "speed": "auto",
+                    "state": "down",
+                    "state_rsn_desc": "Administratively down",
+                    "type": "eth",
+                    "vlan": "--"
+                },
+                {
+                    "interface": "Ethernet1/67",
+                    "portmode": "routed",
+                    "ratemode": "D",
+                    "speed": "auto",
+                    "state": "down",
+                    "state_rsn_desc": "Administratively down",
+                    "type": "eth",
+                    "vlan": "--"
+                },
+                {
+                    "interface": "Ethernet1/68",
+                    "portmode": "routed",
+                    "ratemode": "D",
+                    "speed": "auto",
+                    "state": "down",
+                    "state_rsn_desc": "Administratively down",
+                    "type": "eth",
+                    "vlan": "--"
+                },
+                {
+                    "interface": "Ethernet1/69",
+                    "portmode": "routed",
+                    "ratemode": "D",
+                    "speed": "auto",
+                    "state": "down",
+                    "state_rsn_desc": "Administratively down",
+                    "type": "eth",
+                    "vlan": "--"
+                },
+                {
+                    "interface": "Ethernet1/70",
+                    "portmode": "routed",
+                    "ratemode": "D",
+                    "speed": "auto",
+                    "state": "down",
+                    "state_rsn_desc": "Administratively down",
+                    "type": "eth",
+                    "vlan": "--"
+                },
+                {
+                    "interface": "Ethernet1/71",
+                    "portmode": "routed",
+                    "ratemode": "D",
+                    "speed": "auto",
+                    "state": "down",
+                    "state_rsn_desc": "Administratively down",
+                    "type": "eth",
+                    "vlan": "--"
+                },
+                {
+                    "interface": "Ethernet1/72",
+                    "portmode": "routed",
+                    "ratemode": "D",
+                    "speed": "auto",
+                    "state": "down",
+                    "state_rsn_desc": "Administratively down",
+                    "type": "eth",
+                    "vlan": "--"
+                },
+                {
+                    "interface": "Ethernet1/73",
+                    "portmode": "routed",
+                    "ratemode": "D",
+                    "speed": "auto",
+                    "state": "down",
+                    "state_rsn_desc": "Administratively down",
+                    "type": "eth",
+                    "vlan": "--"
+                },
+                {
+                    "interface": "Ethernet1/74",
+                    "portmode": "routed",
+                    "ratemode": "D",
+                    "speed": "auto",
+                    "state": "down",
+                    "state_rsn_desc": "Administratively down",
+                    "type": "eth",
+                    "vlan": "--"
+                },
+                {
+                    "interface": "Ethernet1/75",
+                    "portmode": "routed",
+                    "ratemode": "D",
+                    "speed": "auto",
+                    "state": "down",
+                    "state_rsn_desc": "Administratively down",
+                    "type": "eth",
+                    "vlan": "--"
+                },
+                {
+                    "interface": "Ethernet1/76",
+                    "portmode": "routed",
+                    "ratemode": "D",
+                    "speed": "auto",
+                    "state": "down",
+                    "state_rsn_desc": "Administratively down",
+                    "type": "eth",
+                    "vlan": "--"
+                },
+                {
+                    "interface": "Ethernet1/77",
+                    "portmode": "routed",
+                    "ratemode": "D",
+                    "speed": "auto",
+                    "state": "down",
+                    "state_rsn_desc": "Administratively down",
+                    "type": "eth",
+                    "vlan": "--"
+                },
+                {
+                    "interface": "Ethernet1/78",
+                    "portmode": "routed",
+                    "ratemode": "D",
+                    "speed": "auto",
+                    "state": "down",
+                    "state_rsn_desc": "Administratively down",
+                    "type": "eth",
+                    "vlan": "--"
+                },
+                {
+                    "interface": "Ethernet1/79",
+                    "portmode": "routed",
+                    "ratemode": "D",
+                    "speed": "auto",
+                    "state": "down",
+                    "state_rsn_desc": "Administratively down",
+                    "type": "eth",
+                    "vlan": "--"
+                },
+                {
+                    "interface": "Ethernet1/80",
+                    "portmode": "routed",
+                    "ratemode": "D",
+                    "speed": "auto",
+                    "state": "down",
+                    "state_rsn_desc": "Administratively down",
+                    "type": "eth",
+                    "vlan": "--"
+                },
+                {
+                    "interface": "Ethernet1/81",
+                    "portmode": "routed",
+                    "ratemode": "D",
+                    "speed": "auto",
+                    "state": "down",
+                    "state_rsn_desc": "Administratively down",
+                    "type": "eth",
+                    "vlan": "--"
+                },
+                {
+                    "interface": "Ethernet1/82",
+                    "portmode": "routed",
+                    "ratemode": "D",
+                    "speed": "auto",
+                    "state": "down",
+                    "state_rsn_desc": "Administratively down",
+                    "type": "eth",
+                    "vlan": "--"
+                },
+                {
+                    "interface": "Ethernet1/83",
+                    "portmode": "routed",
+                    "ratemode": "D",
+                    "speed": "auto",
+                    "state": "down",
+                    "state_rsn_desc": "Administratively down",
+                    "type": "eth",
+                    "vlan": "--"
+                },
+                {
+                    "interface": "Ethernet1/84",
+                    "portmode": "routed",
+                    "ratemode": "D",
+                    "speed": "auto",
+                    "state": "down",
+                    "state_rsn_desc": "Administratively down",
+                    "type": "eth",
+                    "vlan": "--"
+                },
+                {
+                    "interface": "Ethernet1/85",
+                    "portmode": "routed",
+                    "ratemode": "D",
+                    "speed": "auto",
+                    "state": "down",
+                    "state_rsn_desc": "Administratively down",
+                    "type": "eth",
+                    "vlan": "--"
+                },
+                {
+                    "interface": "Ethernet1/86",
+                    "portmode": "routed",
+                    "ratemode": "D",
+                    "speed": "auto",
+                    "state": "down",
+                    "state_rsn_desc": "Administratively down",
+                    "type": "eth",
+                    "vlan": "--"
+                },
+                {
+                    "interface": "Ethernet1/87",
+                    "portmode": "routed",
+                    "ratemode": "D",
+                    "speed": "auto",
+                    "state": "down",
+                    "state_rsn_desc": "Administratively down",
+                    "type": "eth",
+                    "vlan": "--"
+                },
+                {
+                    "interface": "Ethernet1/88",
+                    "portmode": "routed",
+                    "ratemode": "D",
+                    "speed": "auto",
+                    "state": "down",
+                    "state_rsn_desc": "Administratively down",
+                    "type": "eth",
+                    "vlan": "--"
+                },
+                {
+                    "interface": "Ethernet1/89",
+                    "portmode": "routed",
+                    "ratemode": "D",
+                    "speed": "auto",
+                    "state": "down",
+                    "state_rsn_desc": "Administratively down",
+                    "type": "eth",
+                    "vlan": "--"
+                },
+                {
+                    "interface": "Ethernet1/90",
+                    "portmode": "routed",
+                    "ratemode": "D",
+                    "speed": "auto",
+                    "state": "down",
+                    "state_rsn_desc": "Administratively down",
+                    "type": "eth",
+                    "vlan": "--"
+                },
+                {
+                    "interface": "Ethernet1/91",
+                    "portmode": "routed",
+                    "ratemode": "D",
+                    "speed": "auto",
+                    "state": "down",
+                    "state_rsn_desc": "Administratively down",
+                    "type": "eth",
+                    "vlan": "--"
+                },
+                {
+                    "interface": "Ethernet1/92",
+                    "portmode": "routed",
+                    "ratemode": "D",
+                    "speed": "auto",
+                    "state": "down",
+                    "state_rsn_desc": "Administratively down",
+                    "type": "eth",
+                    "vlan": "--"
+                },
+                {
+                    "interface": "Ethernet1/93",
+                    "portmode": "routed",
+                    "ratemode": "D",
+                    "speed": "auto",
+                    "state": "down",
+                    "state_rsn_desc": "Administratively down",
+                    "type": "eth",
+                    "vlan": "--"
+                },
+                {
+                    "interface": "Ethernet1/94",
+                    "portmode": "routed",
+                    "ratemode": "D",
+                    "speed": "auto",
+                    "state": "down",
+                    "state_rsn_desc": "Administratively down",
+                    "type": "eth",
+                    "vlan": "--"
+                },
+                {
+                    "interface": "Ethernet1/95",
+                    "portmode": "routed",
+                    "ratemode": "D",
+                    "speed": "auto",
+                    "state": "down",
+                    "state_rsn_desc": "Administratively down",
+                    "type": "eth",
+                    "vlan": "--"
+                },
+                {
+                    "interface": "Ethernet1/96",
+                    "portmode": "routed",
+                    "ratemode": "D",
+                    "speed": "auto",
+                    "state": "down",
+                    "state_rsn_desc": "Administratively down",
+                    "type": "eth",
+                    "vlan": "--"
+                },
+                {
+                    "interface": "Ethernet1/97",
+                    "portmode": "routed",
+                    "ratemode": "D",
+                    "speed": "auto",
+                    "state": "down",
+                    "state_rsn_desc": "Administratively down",
+                    "type": "eth",
+                    "vlan": "--"
+                },
+                {
+                    "interface": "Ethernet1/98",
+                    "portmode": "routed",
+                    "ratemode": "D",
+                    "speed": "auto",
+                    "state": "down",
+                    "state_rsn_desc": "Administratively down",
+                    "type": "eth",
+                    "vlan": "--"
+                },
+                {
+                    "interface": "Ethernet1/99",
+                    "portmode": "routed",
+                    "ratemode": "D",
+                    "speed": "auto",
+                    "state": "down",
+                    "state_rsn_desc": "Administratively down",
+                    "type": "eth",
+                    "vlan": "--"
+                },
+                {
+                    "interface": "Ethernet1/100",
+                    "portmode": "routed",
+                    "ratemode": "D",
+                    "speed": "auto",
+                    "state": "down",
+                    "state_rsn_desc": "Administratively down",
+                    "type": "eth",
+                    "vlan": "--"
+                },
+                {
+                    "interface": "Ethernet1/101",
+                    "portmode": "routed",
+                    "ratemode": "D",
+                    "speed": "auto",
+                    "state": "down",
+                    "state_rsn_desc": "Administratively down",
+                    "type": "eth",
+                    "vlan": "--"
+                },
+                {
+                    "interface": "Ethernet1/102",
+                    "portmode": "routed",
+                    "ratemode": "D",
+                    "speed": "auto",
+                    "state": "down",
+                    "state_rsn_desc": "Administratively down",
+                    "type": "eth",
+                    "vlan": "--"
+                },
+                {
+                    "interface": "Ethernet1/103",
+                    "portmode": "routed",
+                    "ratemode": "D",
+                    "speed": "auto",
+                    "state": "down",
+                    "state_rsn_desc": "Administratively down",
+                    "type": "eth",
+                    "vlan": "--"
+                },
+                {
+                    "interface": "Ethernet1/104",
+                    "portmode": "routed",
+                    "ratemode": "D",
+                    "speed": "auto",
+                    "state": "down",
+                    "state_rsn_desc": "Administratively down",
+                    "type": "eth",
+                    "vlan": "--"
+                },
+                {
+                    "interface": "Ethernet1/105",
+                    "portmode": "routed",
+                    "ratemode": "D",
+                    "speed": "auto",
+                    "state": "down",
+                    "state_rsn_desc": "Administratively down",
+                    "type": "eth",
+                    "vlan": "--"
+                },
+                {
+                    "interface": "Ethernet1/106",
+                    "portmode": "routed",
+                    "ratemode": "D",
+                    "speed": "auto",
+                    "state": "down",
+                    "state_rsn_desc": "Administratively down",
+                    "type": "eth",
+                    "vlan": "--"
+                },
+                {
+                    "interface": "Ethernet1/107",
+                    "portmode": "routed",
+                    "ratemode": "D",
+                    "speed": "auto",
+                    "state": "down",
+                    "state_rsn_desc": "Administratively down",
+                    "type": "eth",
+                    "vlan": "--"
+                },
+                {
+                    "interface": "Ethernet1/108",
+                    "portmode": "routed",
+                    "ratemode": "D",
+                    "speed": "auto",
+                    "state": "down",
+                    "state_rsn_desc": "Administratively down",
+                    "type": "eth",
+                    "vlan": "--"
+                },
+                {
+                    "interface": "Ethernet1/109",
+                    "portmode": "routed",
+                    "ratemode": "D",
+                    "speed": "auto",
+                    "state": "down",
+                    "state_rsn_desc": "Administratively down",
+                    "type": "eth",
+                    "vlan": "--"
+                },
+                {
+                    "interface": "Ethernet1/110",
+                    "portmode": "routed",
+                    "ratemode": "D",
+                    "speed": "auto",
+                    "state": "down",
+                    "state_rsn_desc": "Administratively down",
+                    "type": "eth",
+                    "vlan": "--"
+                },
+                {
+                    "interface": "Ethernet1/111",
+                    "portmode": "routed",
+                    "ratemode": "D",
+                    "speed": "auto",
+                    "state": "down",
+                    "state_rsn_desc": "Administratively down",
+                    "type": "eth",
+                    "vlan": "--"
+                },
+                {
+                    "interface": "Ethernet1/112",
+                    "portmode": "routed",
+                    "ratemode": "D",
+                    "speed": "auto",
+                    "state": "down",
+                    "state_rsn_desc": "Administratively down",
+                    "type": "eth",
+                    "vlan": "--"
+                },
+                {
+                    "interface": "Ethernet1/113",
+                    "portmode": "routed",
+                    "ratemode": "D",
+                    "speed": "auto",
+                    "state": "down",
+                    "state_rsn_desc": "Administratively down",
+                    "type": "eth",
+                    "vlan": "--"
+                },
+                {
+                    "interface": "Ethernet1/114",
+                    "portmode": "routed",
+                    "ratemode": "D",
+                    "speed": "auto",
+                    "state": "down",
+                    "state_rsn_desc": "Administratively down",
+                    "type": "eth",
+                    "vlan": "--"
+                },
+                {
+                    "interface": "Ethernet1/115",
+                    "portmode": "routed",
+                    "ratemode": "D",
+                    "speed": "auto",
+                    "state": "down",
+                    "state_rsn_desc": "Administratively down",
+                    "type": "eth",
+                    "vlan": "--"
+                },
+                {
+                    "interface": "Ethernet1/116",
+                    "portmode": "routed",
+                    "ratemode": "D",
+                    "speed": "auto",
+                    "state": "down",
+                    "state_rsn_desc": "Administratively down",
+                    "type": "eth",
+                    "vlan": "--"
+                },
+                {
+                    "interface": "Ethernet1/117",
+                    "portmode": "routed",
+                    "ratemode": "D",
+                    "speed": "auto",
+                    "state": "down",
+                    "state_rsn_desc": "Administratively down",
+                    "type": "eth",
+                    "vlan": "--"
+                },
+                {
+                    "interface": "Ethernet1/118",
+                    "portmode": "routed",
+                    "ratemode": "D",
+                    "speed": "auto",
+                    "state": "down",
+                    "state_rsn_desc": "Administratively down",
+                    "type": "eth",
+                    "vlan": "--"
+                },
+                {
+                    "interface": "Ethernet1/119",
+                    "portmode": "routed",
+                    "ratemode": "D",
+                    "speed": "auto",
+                    "state": "down",
+                    "state_rsn_desc": "Administratively down",
+                    "type": "eth",
+                    "vlan": "--"
+                },
+                {
+                    "interface": "Ethernet1/120",
+                    "portmode": "routed",
+                    "ratemode": "D",
+                    "speed": "auto",
+                    "state": "down",
+                    "state_rsn_desc": "Administratively down",
+                    "type": "eth",
+                    "vlan": "--"
+                },
+                {
+                    "interface": "Ethernet1/121",
+                    "portmode": "routed",
+                    "ratemode": "D",
+                    "speed": "auto",
+                    "state": "down",
+                    "state_rsn_desc": "Administratively down",
+                    "type": "eth",
+                    "vlan": "--"
+                },
+                {
+                    "interface": "Ethernet1/122",
+                    "portmode": "routed",
+                    "ratemode": "D",
+                    "speed": "auto",
+                    "state": "down",
+                    "state_rsn_desc": "Administratively down",
+                    "type": "eth",
+                    "vlan": "--"
+                },
+                {
+                    "interface": "Ethernet1/123",
+                    "portmode": "routed",
+                    "ratemode": "D",
+                    "speed": "auto",
+                    "state": "down",
+                    "state_rsn_desc": "Administratively down",
+                    "type": "eth",
+                    "vlan": "--"
+                },
+                {
+                    "interface": "Ethernet1/124",
+                    "portmode": "routed",
+                    "ratemode": "D",
+                    "speed": "auto",
+                    "state": "down",
+                    "state_rsn_desc": "Administratively down",
+                    "type": "eth",
+                    "vlan": "--"
+                },
+                {
+                    "interface": "Ethernet1/125",
+                    "portmode": "routed",
+                    "ratemode": "D",
+                    "speed": "auto",
+                    "state": "down",
+                    "state_rsn_desc": "Administratively down",
+                    "type": "eth",
+                    "vlan": "--"
+                },
+                {
+                    "interface": "Ethernet1/126",
+                    "portmode": "routed",
+                    "ratemode": "D",
+                    "speed": "auto",
+                    "state": "down",
+                    "state_rsn_desc": "Administratively down",
+                    "type": "eth",
+                    "vlan": "--"
+                },
+                {
+                    "interface": "Ethernet1/127",
+                    "portmode": "routed",
+                    "ratemode": "D",
+                    "speed": "auto",
+                    "state": "down",
+                    "state_rsn_desc": "Administratively down",
+                    "type": "eth",
+                    "vlan": "--"
+                },
+                {
+                    "interface": "Ethernet1/128",
+                    "portmode": "routed",
+                    "ratemode": "D",
+                    "speed": "auto",
+                    "state": "down",
+                    "state_rsn_desc": "Administratively down",
+                    "type": "eth",
+                    "vlan": "--"
+                }
+            ]
+        }
+    },
+    "response_type": "json"
+}

@@ -1,1 +1,5 @@
-{"command": "10 permit sctp any host 2001:db8:12::128", "response": ""}
+{
+    "command": "10 permit sctp any host 2001:db8:12::128",
+    "response": [],
+    "response_type": "text"
+}

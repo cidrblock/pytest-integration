@@ -1,1 +1,5 @@
-{"command": "30 permit pim any any", "response": ""}
+{
+    "command": "30 permit pim any any",
+    "response": [],
+    "response_type": "text"
+}

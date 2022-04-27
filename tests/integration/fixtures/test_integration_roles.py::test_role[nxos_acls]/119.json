@@ -1,1 +1,5 @@
-{"command": "end", "response": ""}
+{
+    "command": "end",
+    "response": [],
+    "response_type": "text"
+}

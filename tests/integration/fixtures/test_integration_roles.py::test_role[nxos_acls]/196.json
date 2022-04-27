@@ -1,1 +1,5 @@
-{"command": "no 20 remark IPv6 ACL", "response": ""}
+{
+    "command": "no 20 remark IPv6 ACL",
+    "response": [],
+    "response_type": "text"
+}
