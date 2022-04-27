@@ -2,8 +2,8 @@
     "command": "show running-config",
     "response": [
         "!Command: show running-config",
-        "!Running configuration last done at: Wed Apr 27 20:20:17 2022",
-        "!Time: Wed Apr 27 20:20:22 2022",
+        "!Running configuration last done at: Wed Apr 27 21:09:04 2022",
+        "!Time: Wed Apr 27 21:09:05 2022",
         "",
         "version 9.2(2) Bios:version  ",
         "hostname nxos101",
