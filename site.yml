@@ -1,0 +1,5 @@
+- hosts: all
+  gather_facts: false
+  tasks:
+    - include_role:
+        role: ./collections/ansible_collections/cisco/nxos/tests/integration/targets/nxos_ntp_global

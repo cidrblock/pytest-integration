@@ -18,7 +18,10 @@ skip_glob = [
 max-line-length = 100
 
 [tool.pytest.ini_options]
-addopts = "-n auto"
+addopts = "-s"
 testpaths = ["tests"]
-filterwarnings = ['ignore:AnsibleCollectionFinder has already been configured']
+filterwarnings = [
+    'ignore:AnsibleCollectionFinder has already been configured',
+    'ignore:_AnsibleCollectionFinder.find_spec().*',
+]
 markers = ["serial: Run this test serially via filelock."]

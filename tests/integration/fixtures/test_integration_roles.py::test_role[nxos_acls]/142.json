@@ -1,0 +1,1 @@
+{"command": "show running-config | section 'ip(v6)* access-list'", "response": ""}

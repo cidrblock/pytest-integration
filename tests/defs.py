@@ -25,6 +25,7 @@ class AnsibleTask:
     name: str = ""
     register: Optional[str] = None
     uuid: str = ""
+    tags: List[str] = field(default_factory=list)
 
     def __post_init__(self):
         self.uuid = str(uuid4())
@@ -33,6 +34,8 @@ class AnsibleTask:
         dictionary = asdict(self)
         for key in ("on_finish", "on_start", "result", "uuid"):
             dictionary.pop(key)
+        if self.action.module == "include_role":
+            dictionary.pop("check_mode")
         return dictionary
 
 
@@ -41,6 +44,9 @@ class AnsiblePlay:
     tasks: List[AnsibleTask]
     hosts: str = "all"
     gather_facts: bool = False
+    tags: List[str] = field(default_factory=list)
+    vars: Dict = field(default_factory=dict)
+    module_defaults: Dict = field(default_factory=dict)
 
     def task(self, uuid: str):
         return next(

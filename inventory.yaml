@@ -2,11 +2,13 @@ all:
   children:
     nxos:
       hosts:
-        nxos_sandbox:
+        nxos101:
           ansible_become: false
-          ansible_host: sandbox-nxos-1.cisco.com
+          # ansible_host: sandbox-nxos-1.cisco.com
+          ansible_host: nxos101
           ansible_user: admin
-          ansible_password: Admin_1234!
+          # ansible_password: Admin_1234!
+          ansible_password: password
           ansible_connection: ansible.netcommon.network_cli
           ansible_network_cli_ssh_type: libssh
           ansible_python_interpreter: python

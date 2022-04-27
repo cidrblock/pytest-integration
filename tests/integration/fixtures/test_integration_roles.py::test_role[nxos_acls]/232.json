@@ -1,0 +1,1 @@
+{"command": "show running-config | section 'ip(v6)* access-list'", "response": "ip access-list ACL1v4\n  20 permit ip any any fragments log \n  50 deny tcp any lt smtp 192.0.2.64 0.0.0.255 ack fin \nipv6 access-list ACL1v6\n  10 permit sctp any 2001:db8:12::128/128"}

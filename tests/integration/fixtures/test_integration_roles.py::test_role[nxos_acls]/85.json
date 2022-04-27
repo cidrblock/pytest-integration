@@ -1,0 +1,1 @@
+{"command": "show running-config | section 'ip(v6)* access-list'", "response": "ipv6 access-list ACL1v6\n  10 deny udp 2001:db8:3431::12/128 lt 35 any"}
