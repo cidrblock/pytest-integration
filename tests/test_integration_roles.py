@@ -18,9 +18,8 @@ def find_roles():
     return roles
 
 
-@patch("ansible.executor.task_executor.any")
 @pytest.mark.parametrize("role", find_roles(), ids=lambda x: x.name)
-def test_role(mock_any, role, network_test_vars, playbook_runner):
+def test_role(role, inventory, network_test_vars, playbook_runner):
     task = AnsibleTask(
         action=AnsibleAction(
             module="include_role",
@@ -29,4 +28,4 @@ def test_role(mock_any, role, network_test_vars, playbook_runner):
     )
 
     play = AnsiblePlay(tasks=(task,), vars=network_test_vars)
-    playbook_runner().run(play)
+    playbook_runner(inventory_path=inventory, play=play).run()

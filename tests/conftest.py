@@ -14,20 +14,16 @@ from ansible import context
 from ansible.executor import task_executor
 from ansible.executor.task_queue_manager import TaskQueueManager
 from ansible.inventory.manager import InventoryManager
-from ansible.module_utils import connection as network_connection
 from ansible.module_utils.common.collections import ImmutableDict
 from ansible.parsing.dataloader import DataLoader
 from ansible.playbook.play import Play
 from ansible.plugins.callback.default import (
     CallbackModule as DefaultCallbackModule,
 )
-from ansible.plugins.loader import callback_loader
 from ansible.plugins.loader import connection_loader
-from ansible.plugins.loader import get_with_context_result
 from ansible.utils.display import Display
 from ansible.utils.display import initialize_locale
 from ansible.vars.manager import VariableManager
-from ansible_collections.cisco.nxos.plugins.cliconf.nxos import Cliconf
 from filelock import FileLock
 
 from .defs import AnsiblePlay
@@ -50,6 +46,35 @@ def block_on_serial_mark(request):
         yield
 
 
+@pytest.fixture(scope="function")
+def inventory(tmp_path):
+    inventory = {
+        "all": {
+            "children": {
+                "nxos": {
+                    "hosts": {
+                        "nxos101": {
+                            "ansible_become": False,
+                            "ansible_host": "nxos101",
+                            "ansible_user": "admin",
+                            "ansible_password": "password",
+                            "ansible_connection": "ansible.netcommon.network_cli",
+                            "ansible_network_cli_ssh_type": "libssh",
+                            "ansible_python_interpreter": "python",
+                            "ansible_network_import_modules": True,
+                        }
+                    },
+                    "vars": {"ansible_network_os": "cisco.nxos.nxos"},
+                }
+            }
+        }
+    }
+    inventory_path = tmp_path / "inventory.json"
+    with open(inventory_path, "w") as f:
+        json.dump(inventory, f)
+    return inventory_path
+
+
 class CallbackModule(DefaultCallbackModule):
     """The callback plugin."""
 
@@ -64,6 +89,9 @@ class CallbackModule(DefaultCallbackModule):
         self.display_ok_hosts = True
         self.display_skipped_hosts = True
         self.display_failed_stderr = True
+        self.show_per_host_start = False
+        self.check_mode_markers = True
+
         self.set_option("show_task_path_on_failure", True)
 
         self.results = []
@@ -142,53 +170,40 @@ class CallbackModule(DefaultCallbackModule):
 class PlaybookRunner:
     """The playbook runner."""
 
-    def __init__(self):
+    def __init__(self, inventory_path, play):
         """Initialize the playbook runner."""
-        self.results_callback: CallbackModule
-        self.tqm: TaskQueueManager
-        self.variable_manager: VariableManager
-
-        self.initialize()
-
-    def initialize(self):
-        """Initialize the playbook runner."""
-
+        self._inventory_path = str(inventory_path)
+        self._play = play
         display = Display()
         display.verbosity = 0
         initialize_locale()
 
+    def run(self):
+        """Run the playbook."""
+
         context.CLIARGS = ImmutableDict()
 
-        sources = "inventory.yaml"
-
-        self.loader = DataLoader()
-
-        self.results_callback = CallbackModule()
-
-        inventory = InventoryManager(loader=self.loader, sources=sources)
-
-        self.variable_manager = VariableManager(
-            loader=self.loader, inventory=inventory
+        loader = DataLoader()
+        inventory = InventoryManager(
+            loader=loader,
+            sources=self._inventory_path,
         )
+        results_callback = CallbackModule()
+        results_callback.play = self._play
 
-        self.tqm = TaskQueueManager(
+        variable_manager = VariableManager(loader=loader, inventory=inventory)
+
+        tqm = TaskQueueManager(
             inventory=inventory,
-            variable_manager=self.variable_manager,
-            loader=self.loader,
+            variable_manager=variable_manager,
+            loader=loader,
             passwords={},
-            stdout_callback=self.results_callback,
+            stdout_callback=results_callback,
         )
 
-    def run(self, play):
-        """Run the playbook.
-
-        :param play: The play
-        """
-        self.results_callback.play = play
-
-        play_dict = asdict(play)
+        play_dict = asdict(self._play)
         tasks = []
-        for task_obj in play.tasks:
+        for task_obj in self._play.tasks:
             task_dict = task_obj.as_dict()
             task_dict["name"] = f"{task_obj.name}~{task_obj.uuid}"
             tasks.append(task_dict)
@@ -196,16 +211,16 @@ class PlaybookRunner:
 
         play = Play().load(
             play_dict,
-            variable_manager=self.variable_manager,
-            loader=self.loader,
+            variable_manager=variable_manager,
+            loader=loader,
         )
 
         try:
-            self.tqm.run(play)
+            tqm.run(play)
         finally:
-            self.tqm.cleanup()
-            if self.loader:
-                self.loader.cleanup_all_tmp_files()
+            tqm.cleanup()
+            if loader:
+                loader.cleanup_all_tmp_files()
 
         shutil.rmtree(C.DEFAULT_LOCAL_TMP, True)
 
@@ -217,57 +232,6 @@ def playbook_runner():
     :yields: The playbook runner
     """
     yield PlaybookRunner
-
-
-@pytest.fixture(scope="function")
-def connection(monkeypatch):
-    class Connection:
-        """The connection, mocked."""
-
-        force_persistence = True
-        return_values = {}
-
-        def __init__(self, *args, **kwargs):
-            """Initialize the connection."""
-            self.config_modified = False
-
-        def edit_config(self, *args, **kwargs):
-            self.config_modified = True
-            return
-
-        @classmethod
-        def get(cls, *args, **kwargs):
-            return cls.return_values.get(args[0])
-
-        def get_capabilities(self):
-            return Cliconf(connection=self).get_capabilities()
-
-        @classmethod
-        def send(cls, *args, **kwargs):
-            return cls.return_values.get(kwargs["command"].decode("utf-8"))
-
-        def set_option(self, *args, **kwargs):
-            return
-
-        def set_options(self, *args, **kwargs):
-            return
-
-        def reset(self):
-            return
-
-        @classmethod
-        def run_commands(cls, *args, **kwargs):
-            commands = [entry["command"] for entry in args[0]]
-            result = [cls.return_values.get(command) for command in commands]
-            return result
-
-    monkeypatch.setattr(network_connection, "Connection", Connection)
-
-    def start_connection(*args, **kwargs):
-        return "/dev/null"
-
-    monkeypatch.setattr(task_executor, "start_connection", start_connection)
-    return Connection
 
 
 @pytest.fixture(scope="function")

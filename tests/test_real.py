@@ -9,7 +9,7 @@ from .defs import AnsiblePlay
 from .defs import AnsibleTask
 
 
-def test_version(playbook_runner):
+def test_version(inventory, playbook_runner):
     """Test show version output.
 
     :param playbook_runner: The playbook runner
@@ -31,10 +31,10 @@ def test_version(playbook_runner):
     )
 
     play = AnsiblePlay(tasks=(task,))
-    playbook_runner().run(play)
+    playbook_runner(inventory_path=inventory, play=play).run()
 
 
-def test_interface(playbook_runner):
+def test_interface(inventory, playbook_runner):
     """Test show interface output.
 
     :param playbook_runner: The playbook runner
@@ -56,7 +56,8 @@ def test_interface(playbook_runner):
     )
 
     play = AnsiblePlay(tasks=(task,))
-    playbook_runner().run(play)
+    playbook_runner(inventory_path=inventory, play=play).run()
+
     task = AnsibleTask(
         action=AnsibleAction(
             module="cisco.nxos.nxos_command",
@@ -69,7 +70,7 @@ def test_interface(playbook_runner):
     )
 
     play = AnsiblePlay(tasks=(task,))
-    playbook_runner().run(play)
+    playbook_runner(inventory_path=inventory, play=play).run()
     assert "IP Interface Status for VRF" in task.result._result["stdout"][0]
 
 
@@ -81,7 +82,7 @@ round_trips = (
 
 
 @pytest.mark.parametrize("module", round_trips)
-def test_interfaces_unchanged(module, playbook_runner):
+def test_interfaces_unchanged(module, inventory, playbook_runner):
     """Test interfaces round trip.
 
     :param module: The module to test
@@ -103,13 +104,13 @@ def test_interfaces_unchanged(module, playbook_runner):
     )
 
     play = AnsiblePlay(tasks=(task_gather, task_apply))
-    playbook_runner().run(play)
+    playbook_runner(inventory_path=inventory, play=play).run()
     assert task_apply.result._result["changed"] is False
     assert task_apply.result._result["commands"] == []
 
 
 @pytest.mark.serial
-def test_interfaces_changed(playbook_runner):
+def test_interfaces_changed(inventory, playbook_runner):
     """Test interfaces changed.
 
     :param playbook_runner: The playbook runner
@@ -147,7 +148,7 @@ def test_interfaces_changed(playbook_runner):
     )
 
     play = AnsiblePlay(tasks=(task_gather, task_apply))
-    playbook_runner().run(play)
+    playbook_runner(inventory_path=inventory, play=play).run()
     assert task_apply.result._result["changed"] is True
     expected_commands = [
         "interface Ethernet1/1",
