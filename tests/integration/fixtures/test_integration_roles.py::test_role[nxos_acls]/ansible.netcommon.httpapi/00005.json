@@ -1,0 +1,48 @@
+{
+    "body": {
+        "ins_api": {
+            "outputs": {
+                "output": {
+                    "body": "ip access-list ACL1v4\n  10 permit ip any any \n  20 deny udp any any \nipv6 access-list ACL1v6\n  10 permit sctp any any \n  20 remark IPv6 ACL\nip access-list ACL2v4\n  10 permit ahp 192.0.2.0 0.0.0.255 any \nipv6 access-list ACL2v6\n  10 deny ipv6 any 2001:db8:3000::36/128 \n  20 permit tcp 2001:db8:2000:2::2/128 2001:db8:2000:ab::2/128 \n",
+                    "code": "200",
+                    "input": "show running-config | section 'ip(v6)* access-list'",
+                    "msg": "Success"
+                }
+            },
+            "sid": "eoc",
+            "type": "cli_show_ascii",
+            "version": "1.0"
+        }
+    },
+    "data": {
+        "ins_api": {
+            "chunk": "0",
+            "input": "show running-config | section 'ip(v6)* access-list'",
+            "output_format": "json",
+            "sid": null,
+            "type": "cli_show_ascii",
+            "version": "1.0"
+        }
+    },
+    "headers": {
+        "Access-Control-Allow-Headers": "Origin, X-Requested-With, Content-Type, Accept, devcookie",
+        "Access-Control-Allow-Methods": "POST,GET,OPTIONS",
+        "Access-Control-Allow-Origin": "http://127.0.0.1:8000",
+        "Connection": "close",
+        "Content-Type": "text/json",
+        "Date": "Thu, 28 Apr 2022 19:09:38 GMT",
+        "Server": "nginx/1.7.10",
+        "Transfer-Encoding": "chunked"
+    },
+    "path": "/ins",
+    "reason": "OK",
+    "send_kwargs": {
+        "headers": {
+            "Content-Type": "application/json"
+        },
+        "method": "POST"
+    },
+    "status": 200,
+    "url": "http://nxos101:80/ins",
+    "version": 11
+}

@@ -1,0 +1,57 @@
+{
+    "body": {
+        "ins_api": {
+            "outputs": {
+                "output": [
+                    {
+                        "body": "Cisco Nexus Operating System (NX-OS) Software\nTAC support: http://www.cisco.com/tac\nDocuments: http://www.cisco.com/en/US/products/ps9372/tsd_products_support_series_home.html\nCopyright (c) 2002-2018, Cisco Systems, Inc. All rights reserved.\nThe copyrights to certain works contained herein are owned by\nother third parties and are used and distributed under license.\nSome parts of this software are covered under the GNU Public\nLicense. A copy of the license is available at\nhttp://www.gnu.org/licenses/gpl.html.\n\nNexus 9000v is a demo version of the Nexus Operating System\n\nSoftware\n  BIOS: version \n NXOS: version 9.2(2)\n  BIOS compile time:  \n  NXOS image file is: bootflash:///nxos.9.2.2.bin\n  NXOS compile time:  11/4/2018 21:00:00 [11/05/2018 06:11:06]\n\n\nHardware\n  cisco Nexus9000 9000v Chassis \n   with 8035024 kB of memory.\n  Processor Board ID 970MUM0NTLV\n\n  Device name: nxos101\n  bootflash:    3509454 kB\nKernel uptime is 1 day(s), 8 hour(s), 5 minute(s), 56 second(s)\n\nLast reset \n  Reason: Unknown\n  System version: \n  Service: \n\nplugin\n  Core Plugin, Ethernet Plugin\n\nActive Package(s):\n        mtx-openconfig-all-1.0.0.0-9.2.2.lib32_n9000\n",
+                        "code": "200",
+                        "input": "show version",
+                        "msg": "Success"
+                    },
+                    {
+                        "body": "NAME: \"Chassis\",  DESCR: \"Nexus9000 9000v Chassis\"               \nPID: N9K-9000v           ,  VID: V02 ,  SN: 970MUM0NTLV          \n\nNAME: \"Slot 1\",  DESCR: \"Nexus 9000v Ethernet Module\"           \nPID: N9K-9000v           ,  VID: V02 ,  SN: 970MUM0NTLV          \n\nNAME: \"Fan 1\",  DESCR: \"Nexus9000 9000v Chassis Fan Module\"    \nPID: N9K-9000v-FAN       ,  VID: V01 ,  SN: N/A                  \n\nNAME: \"Fan 2\",  DESCR: \"Nexus9000 9000v Chassis Fan Module\"    \nPID: N9K-9000v-FAN       ,  VID: V01 ,  SN: N/A                  \n\nNAME: \"Fan 3\",  DESCR: \"Nexus9000 9000v Chassis Fan Module\"    \nPID: N9K-9000v-FAN       ,  VID: V01 ,  SN: N/A                  \n\n",
+                        "code": "200",
+                        "input": "show inventory",
+                        "msg": "Success"
+                    }
+                ]
+            },
+            "sid": "eoc",
+            "type": "cli_show_ascii",
+            "version": "1.0"
+        }
+    },
+    "data": {
+        "ins_api": {
+            "chunk": "0",
+            "input": "show version ;show inventory",
+            "output_format": "json",
+            "sid": null,
+            "type": "cli_show_ascii",
+            "version": "1.0"
+        }
+    },
+    "headers": {
+        "Access-Control-Allow-Headers": "Origin, X-Requested-With, Content-Type, Accept, devcookie",
+        "Access-Control-Allow-Methods": "POST,GET,OPTIONS",
+        "Access-Control-Allow-Origin": "http://127.0.0.1:8000",
+        "Connection": "close",
+        "Content-Type": "text/json",
+        "Date": "Thu, 28 Apr 2022 19:09:33 GMT",
+        "Server": "nginx/1.7.10",
+        "Set-Cookie": "nxapi_auth=admin:EH/UkrVjy+KKnQS5NJJXVomztUk=; Secure; HttpOnly;",
+        "Transfer-Encoding": "chunked"
+    },
+    "path": "/ins",
+    "reason": "OK",
+    "send_kwargs": {
+        "headers": {
+            "Content-Type": "application/json"
+        },
+        "method": "POST"
+    },
+    "status": 200,
+    "url": "http://nxos101:80/ins",
+    "version": 11
+}

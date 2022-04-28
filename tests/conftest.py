@@ -18,9 +18,14 @@ from ansible.module_utils import connection as network_connection
 from ansible.module_utils.common.collections import ImmutableDict
 from ansible.parsing.dataloader import DataLoader
 from ansible.playbook.play import Play
-from ansible.plugins.callback.default import CallbackModule
+from ansible.plugins.callback.default import (
+    CallbackModule as DefaultCallbackModule,
+)
+from ansible.plugins.loader import callback_loader
 from ansible.plugins.loader import connection_loader
 from ansible.plugins.loader import get_with_context_result
+from ansible.utils.display import Display
+from ansible.utils.display import initialize_locale
 from ansible.vars.manager import VariableManager
 from ansible_collections.cisco.nxos.plugins.cliconf.nxos import Cliconf
 from filelock import FileLock
@@ -45,7 +50,7 @@ def block_on_serial_mark(request):
         yield
 
 
-class Callback(CallbackModule):
+class CallbackModule(DefaultCallbackModule):
     """The callback plugin."""
 
     def __init__(self, *args, **kwargs):
@@ -139,7 +144,7 @@ class PlaybookRunner:
 
     def __init__(self):
         """Initialize the playbook runner."""
-        self.results_callback: Callback
+        self.results_callback: CallbackModule
         self.tqm: TaskQueueManager
         self.variable_manager: VariableManager
 
@@ -147,12 +152,18 @@ class PlaybookRunner:
 
     def initialize(self):
         """Initialize the playbook runner."""
-        context.CLIARGS = ImmutableDict(verbosity=3)
+
+        display = Display()
+        display.verbosity = 0
+        initialize_locale()
+
+        context.CLIARGS = ImmutableDict()
+
         sources = "inventory.yaml"
 
         self.loader = DataLoader()
 
-        self.results_callback = Callback()
+        self.results_callback = CallbackModule()
 
         inventory = InventoryManager(loader=self.loader, sources=sources)
 
@@ -259,14 +270,6 @@ def connection(monkeypatch):
     return Connection
 
 
-EXEMPTED = [
-    "^Kernel uptime is.*$",  # nxos show version uptime
-    "^!Running configuration last done.*",  # nxos show running-config last
-    "^!Time:",  # nxos show version time
-    r'\s+"kern_uptm_.*',  # nxos show version json
-]
-
-
 @pytest.fixture(scope="function")
 def network_test_vars(monkeypatch, request):
     """Provide the network test vars."""
@@ -308,8 +311,8 @@ def network_test_vars(monkeypatch, request):
 
     vars = {
         "ansible_network_test_parameters": {
-            "exempted": EXEMPTED,
             "fixture_directory": str(test_fixture_directory),
+            "match_threshold": 0.90,
             "mode": test_mode,
         }
     }
